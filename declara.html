@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header Flotante -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">🌸 Jacky Flores y Detalles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="significados.html">Significados</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección del Juego -->
+  <div class="container text-center mt-5">
+    <h2 class="mb-4">💕 ¿Quieres ser mi novia? 💕</h2>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <img
+        src="https://images.unsplash.com/photo-1506014299253-3725319c0f69?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW1vciUyMGNvcmVhbm98ZW58MHx8MHx8fDA%3D"
+        alt="Amor" class="mb-3" width="300" height="300" top="150px">
+
+      <div>
+        <button id="btnSi" class="btn btn-success me-3">Sí 💖</button>
+        <button id="btnNo" class="btn btn-danger">No 💔</button>
+      </div>
+
+      <!-- Mensaje oculto -->
+      <div id="mensaje" class="mt-4 alert alert-success d-none">
+        🥰 ¡Lo sabía! Eres la mejor 💕
+      </div>
+    </div>
+  </div>
+
+  <!-- Estilos para evitar que el botón "No" sea clickeado -->
+  <style>
+    #btnNo {
+      position: absolute;
+    }
+  </style>
+
+  <!-- Script para la lógica del juego -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btnNo = document.getElementById("btnNo");
+      const btnSi = document.getElementById("btnSi");
+      const mensaje = document.getElementById("mensaje");
+
+      // Mueve el botón "No" a una posición aleatoria
+      btnNo.addEventListener("mouseover", function () {
+        const x = Math.random() * (window.innerWidth - btnNo.offsetWidth);
+        const y = Math.random() * (window.innerHeight - btnNo.offsetHeight);
+        btnNo.style.left = `${x}px`;
+        btnNo.style.top = `${y}px`;
+      });
+
+      // Al hacer clic en "Sí", muestra el mensaje
+      btnSi.addEventListener("click", function () {
+        mensaje.classList.remove("d-none");
+        mensaje.classList.add("animate__animated", "animate__bounceIn");
+      });
+    });
+  </script>
+
+  <!-- Enlace a Animate.css para animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <div class="text-center mt-4">
+    <button id="btnCompartir" class="btn btn-primary">
+      <i class="bi bi-share-fill"></i> Compartir Enlace
+    </button>
+  </div>
+
+
+</body>
+
+</html>
