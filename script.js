@@ -127,3 +127,46 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// Array con los datos de los Ramos de Rosas Eternas
+const rosasEternas = [
+  {
+    nombre: "Ramo Clásico",
+    descripcion: "Rosas eternas en tonos rojos vibrantes.",
+    imagen: "img/ramo1.jpg",
+  },
+  {
+    nombre: "Ramo Elegancia",
+    descripcion: "Mezcla de rosas eternas blancas y rosas.",
+    imagen: "img/ramo2.jpg",
+  },
+  {
+    nombre: "Ramo Amor Eterno",
+    descripcion: "Un ramo perfecto para demostrar amor duradero.",
+    imagen: "img/ramo3.jpg",
+  },
+];
+
+// Función para generar las tarjetas de rosas eternas
+function generarRamosRosasEternas() {
+  const contenedor = document.getElementById("rosas-eternas-container");
+
+  rosasEternas.forEach((ramo) => {
+    const card = document.createElement("div");
+    card.classList.add("col-md-4");
+
+    card.innerHTML = `
+      <div class="card">
+        <img src="${ramo.imagen}" class="card-img-top" alt="${ramo.nombre}">
+        <div class="card-body">
+          <h5 class="card-title">${ramo.nombre}</h5>
+          <p class="card-text">${ramo.descripcion}</p>
+        </div>
+      </div>
+    `;
+
+    contenedor.appendChild(card);
+  });
+}
+
+// Llamar a la función al cargar la página
+document.addEventListener("DOMContentLoaded", generarRamosRosasEternas);
