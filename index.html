@@ -60,6 +60,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
     <div class="container">
       <a class="navbar-brand" href="#">🌸 Jacky Flores y Detalles</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -76,6 +77,7 @@
     </div>
   </nav>
 
+
   <!-- Banner con Diseño Botánico -->
   <header class="banner">
     <div class="container text-center text-white">
@@ -89,8 +91,40 @@
     <section id="home" class="text-center">
       <h2 class="section-title">🌿 Bienvenidos</h2>
       <p class="section-text">Explora nuestra colección de flores y arreglos únicos.</p>
+      <!-- Filtro -->
+      <div class="container my-4">
+        <div class="container mt-3">
+          <h5 class="mb-2">Palabras clave:</h5>
+          <span class="badge bg-primary">Tulipanes</span>
+          <span class="badge bg-secondary">Rosas Naturales</span>
+          <span class="badge bg-success">Ramos</span>
+          <span class="badge bg-danger">Rosas Eternas</span>
+          <span class="badge bg-warning text-dark">Chocolates</span>
+          <span class="badge bg-info text-dark">Graduación</span>
+          <span class="badge bg-dark">Regalos</span>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <input type="text" id="filtro" class="form-control" placeholder="Buscar ramo...">
+          </div>
+        </div>
+      </div>
+
     </section>
 
+    <script>
+      const filtro = document.getElementById("filtro");
+
+      filtro.addEventListener("input", () => {
+        const texto = filtro.value.toLowerCase();
+        const ramosFiltrados = ramos.filter(ramo =>
+          ramo.titulo.toLowerCase().includes(texto) ||
+          ramo.descripcion.toLowerCase().includes(texto)
+        );
+        renderRamos(ramosFiltrados);
+      });
+    </script>
     <!-- Sección de Ramos de Flores -->
     <section id="ramos" class="container py-5">
       <h2 class="text-center section-title">💐 Nuestros Ramos Especiales</h2>
@@ -669,31 +703,26 @@
       const container = document.getElementById("ramos-container");
 
       // Generar dinámicamente las tarjetas
-      ramos.forEach(ramo => {
-        const card = `
-        <div class="col-md-4 col-12 mb-4">
-          <div class="card shadow-sm">
-            <img src="${ramo.imagen}" class="card-img-top img-hover" alt="${ramo.alt}">
-            <div class="card-body text-center">
-              <h5 class="card-title">${ramo.titulo}</h5>
-              <p class="card-text">${ramo.descripcion}</p>
-              <a href="contacto.html" class="btn btn-success">Ver más</a>
-            </div>
-          </div>
+      function renderRamos(ramos) {
+        container.innerHTML = ramos.map(ramo => `
+    <div class="col-md-4 col-12 mb-4">
+      <div class="card shadow-sm">
+        <img src="${ramo.imagen}" class="card-img-top img-hover" alt="${ramo.alt}">
+        <div class="card-body text-center">
+          <h5 class="card-title">${ramo.titulo}</h5>
+          <p class="card-text">${ramo.descripcion}</p>
+          <a href="contacto.html" class="btn btn-success">Ver más</a>
         </div>
-      `;
-        container.innerHTML += card;
-      });
-    </script>
-    <!-- Sección de Ramos de Rosas Eternas -->
-    <section id="rosas-eternas" class="container py-5">
-      <h2 class="text-center section-title">🌹 Ramos de Rosas Eternas</h2>
-      <p class="text-center section-text">Descubre la belleza eterna en cada pétalo.</p>
-
-      <div class="row" id="rosas-eternas-container">
-        <!-- Las tarjetas se generarán aquí con JavaScript -->
       </div>
-    </section>
+    </div>
+  `).join(""); // Une las tarjetas en un solo string para mejorar el rendimiento
+      }
+
+      // Renderizar las tarjetas al cargar la página
+      renderRamos(ramos);
+
+    </script>
+
 
     <section id="about" class="text-center container py-5">
       <h2 class="section-title">🌷 Nuestra Historia</h2>
