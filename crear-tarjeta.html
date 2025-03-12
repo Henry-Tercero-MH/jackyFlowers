@@ -32,16 +32,30 @@
     </div>
   </nav>
 
-  <div class="container mt-5 pt-5"> <!-- Separación del nav -->
+  <div class="container mt-5">
     <h2 class="mb-4">💌 Crea tu Tarjeta de Amor 💌</h2>
     <div class="form-container mx-auto">
       <input type="text" id="nombre" class="form-control mb-2" placeholder="Tu nombre">
       <input type="text" id="pareja" class="form-control mb-2" placeholder="Nombre de tu pareja">
       <textarea id="mensaje" class="form-control mb-2" placeholder="Escribe tu mensaje de amor..."></textarea>
-      <input type="url" id="cancion" class="form-control mb-2" placeholder="Enlace de la canción">
-      <label for="imagen" class="form-label">Sube una imagen:</label>
-      <input type="file" id="imagen" class="form-control mb-2" accept="image/*">
+      <input type="url" id="cancion" class="form-control mb-2"
+        placeholder="Enlace de la canción (YouTube, Spotify, etc.)">
+      <input type="file" id="fondo-file" class="form-control mb-2" accept="image/*">
       <button class="btn btn-primary w-100 mt-2 bg-rosado" onclick="generarTarjeta()">🎁 Generar Tarjeta</button>
+      <button class="btn btn-success w-100 mt-2 d-none" id="btn-descargar" onclick="descargarTarjeta()">📥
+        Descargar</button>
+    </div>
+  </div>
+
+  <div class="tarjeta mt-4 d-none" id="tarjeta">
+    <div class="overlay">
+      <p class="titulo">💖 Para: <span id="nombrePareja"></span></p>
+      <p class="mensaje" id="mensajeTexto"></p>
+      <div class="qr-container">
+        <div id="qrcode"></div>
+      </div>
+      <p class="footer">🎶 Escanea el QR para escuchar la canción</p>
+      <p class="titulo">💌 De: <span id="nombreRemitente"></span></p>
     </div>
   </div>
 

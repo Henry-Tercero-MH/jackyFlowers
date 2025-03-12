@@ -64,7 +64,7 @@ function generarTarjeta() {
   let pareja = document.getElementById("pareja").value || "Mi amor";
   let mensaje = document.getElementById("mensaje").value || "Te amo mucho 💖";
   let cancion = document.getElementById("cancion").value;
-  let fondoUrl = document.getElementById("fondo-url").value;
+
   let fondoFile = document.getElementById("fondo-file").files[0];
 
   if (!cancion) {
