@@ -1,134 +1,272 @@
-  <!DOCTYPE html>
-  <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jacky Flores y Detalles</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jacky Flores y Detalles</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  </head>
+</head>
 
-  <body>
-    <!-- Botón para abrir el menú lateral -->
-    <button class="btn btn-success position-fixed top-50 start-0 ms-2" data-bs-toggle="offcanvas"
-      data-bs-target="#menuLateral" bg-red>
-      ❤️
-    </button>
-    <!-- Menú lateral -->
-    <div class="offcanvas offcanvas-start text-bg-rose" tabindex="-1" id="menuLateral">
-      <div class="offcanvas-header">
-        <h6 class="offcanvas-title text-white"><i class="fas fa-seedling"></i> Menú de Opciones</h6>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item bg-transparent border-0">
-            <a href="test-regalo.html" class="text-decoration-none text-white d-flex align-items-center">
-              <i class="fas fa-gift me-2"></i> Test: Descubre el Regalo Perfecto
-            </a>
-          </li>
-          <li class="list-group-item bg-transparent border-0">
-            <a href="crear-tarjeta.html" class="text-decoration-none text-white d-flex align-items-center">
-              <i class="fas fa-heart me-2"></i> Crea tu Tarjeta Especial
-            </a>
-          </li>
-          <li class="list-group-item bg-transparent border-0">
-            <a href="fechas-regalo.html" class="text-decoration-none text-white d-flex align-items-center">
-              <i class="fas fa-calendar-alt me-2"></i> Fechas Ideales para Regalar
-            </a>
-          </li>
-          <li class="list-group-item bg-transparent border-0">
-            <a href="declara.html" class="text-decoration-none text-white d-flex align-items-center">
-              <i class="fas fa-calendar-alt me-2"></i> Declara tu Amor
-            </a>
-          </li>
+<body>
+  <!-- Botón para abrir el menú lateral -->
+  <button class="btn btn-success position-fixed top-50 start-0 ms-2" data-bs-toggle="offcanvas"
+    data-bs-target="#menuLateral" bg-red>
+    ❤️
+  </button>
+  <!-- Menú lateral -->
+  <div class="offcanvas offcanvas-start text-bg-rose" tabindex="-1" id="menuLateral">
+    <div class="offcanvas-header">
+      <h6 class="offcanvas-title text-white"><i class="fas fa-seedling"></i> Menú de Opciones</h6>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent border-0">
+          <a href="test-regalo.html" class="text-decoration-none text-white d-flex align-items-center">
+            <i class="fas fa-gift me-2"></i> Test: Descubre el Regalo Perfecto
+          </a>
+        </li>
+        <li class="list-group-item bg-transparent border-0">
+          <a href="crear-tarjeta.html" class="text-decoration-none text-white d-flex align-items-center">
+            <i class="fas fa-heart me-2"></i> Crea tu Tarjeta Especial
+          </a>
+        </li>
+        <li class="list-group-item bg-transparent border-0">
+          <a href="fechas-regalo.html" class="text-decoration-none text-white d-flex align-items-center">
+            <i class="fas fa-calendar-alt me-2"></i> Fechas Ideales para Regalar
+          </a>
+        </li>
+        <li class="list-group-item bg-transparent border-0">
+          <a href="declara.html" class="text-decoration-none text-white d-flex align-items-center">
+            <i class="fas fa-calendar-alt me-2"></i> Declara tu Amor
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Enlace a FontAwesome para los íconos -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+
+
+  <!-- Header Flotante -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">🌸 Jacky Flores y Detalles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="significados.html">Significados</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
         </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- Enlace a FontAwesome para los íconos -->
-    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  <!-- Banner con Diseño Botánico -->
+  <header class="banner">
+    <div class="container text-center text-white">
+      <h1 class="display-4">La Belleza de la Naturaleza</h1>
+      <p class="lead">Flores que hablan el lenguaje del Amor</p>
+    </div>
+  </header>
 
 
+  <div class="container mt-5">
+    <section id="home" class="text-center">
+      <h2 class="section-title">🌿 Bienvenidos</h2>
+      <p class="section-text">Explora nuestra colección de flores y arreglos únicos.</p>
+    </section>
 
-    <!-- Header Flotante -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
-      <div class="container">
-        <a class="navbar-brand" href="#">🌸 Jacky Flores y Detalles</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="significados.html">Significados</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+    <!-- Sección de Ramos de Flores -->
+    <section id="ramos" class="container py-5">
+      <h2 class="text-center section-title">💐 Nuestros Ramos Especiales</h2>
+      <p class="text-center section-text">Elige el ramo perfecto para cada ocasión.</p>
 
-          </ul>
-        </div>
+      <div class="row" id="ramos-container">
+        <!-- Las tarjetas se generarán aquí con JavaScript -->
       </div>
-    </nav>
+    </section>
 
-    <!-- Banner con Diseño Botánico -->
-    <header class="banner">
-      <div class="container text-center text-white">
-        <h1 class="display-4">La Belleza de la Naturaleza</h1>
-        <p class="lead">Flores que hablan el lenguaje del Amor</p>
-      </div>
-    </header>
+    <script>
+      const ramos = [
+        {
+          titulo: "Ramo de Rosas Blancas y Rosadas",
+          descripcion: "Simboliza pureza e inocencia, ideal para bodas y nuevos comienzos.",
+          imagen: "assets/rosas.jpg",
+          alt: "Ramo de Rosas Blancas y Rosadas"
+        },
+        {
+          titulo: "Ramo de Gerberas",
+          descripcion: "Representa alegría y luz, perfecto para celebrar momentos especiales.",
+          imagen: "assets/gardeniasRosadas.jpg",
+          alt: "Ramo de Gardenias"
+        },
+        {
+          titulo: "Ramo de Rosas Rojas",
+          descripcion: "Expresa amor y pasión intensa, ideal para aniversarios y declaraciones de amor.",
+          imagen: "assets/rosasRojas.jpg",
+          alt: "Ramo de Rosas Rojas"
+        },
+        {
+          titulo: "Ramo de 36 Rosas Rojas con Baby y Chocolates",
+          descripcion: "Un elegante detalle de amor con rosas, chocolates y un toque especial.",
+          imagen: "assets/ramo36rosasRojasBabyChocolates.jpg",
+          alt: "Ramo de 36 Rosas Rojas con Baby y Chocolates"
+        },
+        {
+          titulo: "Ramo de 10 Gerberas, 24 Rosas y Chocolates",
+          descripcion: "Una combinación perfecta de colores y dulzura para sorprender.",
+          imagen: "assets/r10gerberas24rosasychocolates.jpg",
+          alt: "Ramo de 10 Gerberas, 24 Rosas y Chocolates"
+        },
+        {
+          titulo: "Ramo de 11 Gerberas, 24 Rosas y 12 Chocolates Ferrero Rocher",
+          descripcion: "Ideal para demostrar afecto con un toque dulce y colorido.",
+          imagen: "assets/r11gerberas24rosas12chocolatesrerrerorocher.jpg",
+          alt: "Ramo de 11 Gerberas, 24 Rosas y 12 Chocolates Ferrero Rocher"
+        },
+        {
+          titulo: "Ramo de 9 Gerberas, Chocolates y Tarjeta",
+          descripcion: "Un hermoso detalle con flores, dulces y un mensaje especial.",
+          imagen: "assets/r9gerberaschocolatesytarjeta.jpg",
+          alt: "Ramo de 9 Gerberas, Chocolates y Tarjeta"
+        },
+        {
+          titulo: "Ramo de 12 Rosas y 1 Girasol",
+          descripcion: "Una combinación vibrante de rosas y girasoles para alegrar el día.",
+          imagen: "assets/r12rosas1girasol.jpg",
+          alt: "Ramo de 12 Rosas y 1 Girasol"
+        },
+        {
+          titulo: "Ramo de 24 Rosas Rojas, Solidago y Coronas Metal",
+          descripcion: "Un arreglo sofisticado con un toque metálico y flores vibrantes.",
+          imagen: "assets/r24rosasrojasSolidagoyCoronasMetal.jpg",
+          alt: "Ramo de 24 Rosas Rojas, Solidago y Coronas Metal"
+        },
+        {
+          titulo: "Ramo de 12 Gerberas, Clavel y Eucalipto",
+          descripcion: "Una mezcla fresca y delicada con flores aromáticas.",
+          imagen: "assets/r12gerberasClavelEucalipto.jpg",
+          alt: "Ramo de 12 Gerberas, Clavel y Eucalipto"
+        },
+        {
+          titulo: "Ramo de 24 Rosas Rosas y Chocolates",
+          descripcion: "Un elegante detalle de rosas con un dulce acompañamiento.",
+          imagen: "assets/r24rosasRosasChocolates.jpg",
+          alt: "Ramo de 24 Rosas Rosas y Chocolates"
+        },
+        {
+          titulo: "Ramo de 24 Rosas Blancas y Rosadas, Clavel y Eucalipto",
+          descripcion: "Una combinación romántica y elegante para toda ocasión.",
+          imagen: "assets/r24rosasBlancasYrosadasClavelYeucalipto.jpg",
+          alt: "Ramo de 24 Rosas Blancas y Rosadas, Clavel y Eucalipto"
+        },
+        {
+          titulo: "Ramo de 12 Rosas, 1 Girasol y 1 Birrete de Graduación Personalizado",
+          descripcion: "Un regalo perfecto para celebrar logros y nuevos comienzos.",
+          imagen: "assets/r12rosas1girasol1birreteGraduacionPersonalizado.jpg",
+          alt: "Ramo de 12 Rosas, 1 Girasol y 1 Birrete de Graduación Personalizado"
+        },
+        {
+          titulo: "Ramo de 12 Rosas Rosadas, Lirios y Eucaliptos",
+          descripcion: "Un detalle floral elegante con un aroma encantador.",
+          imagen: "assets/r12rosasRosadasLiriosYeucaliptos.jpg",
+          alt: "Ramo de 12 Rosas Rosadas, Lirios y Eucaliptos"
+        },
+        {
+          titulo: "Ramo de 12 Girasoles, 24 Rosas Rojas, Chocolates y Globo",
+          descripcion: "Una expresión de alegría, amor y dulzura en un solo arreglo.",
+          imagen: "assets/r12girasoles24rosasRojasChocolatesYglobo.jpg",
+          alt: "Ramo de 12 Girasoles, 24 Rosas Rojas, Chocolates y Globo"
+        },
+        {
+          titulo: "Ramo de Fresas, Chocolates Ferrero Rocher y Baby",
+          descripcion: "Un detalle único que combina frescura y dulzura.",
+          imagen: "assets/rFresasChocolatesFerreroRocherYbaby.jpg",
+          alt: "Ramo de Fresas, Chocolates Ferrero Rocher y Baby"
+        },
+        {
+          titulo: "Arreglo Floral de 24 Rosas, Girasol, Clavel y Chocolates",
+          descripcion: "Una combinación perfecta de colores y dulces.",
+          imagen: "assets/ArregloFloral24rosasGirasolClavelYChocolates.jpg",
+          alt: "Arreglo Floral de 24 Rosas, Girasol, Clavel y Chocolates"
+        },
+        {
+          titulo: "Arreglo de Rosas, Oso de Peluche, Galletas y Globo",
+          descripcion: "Un regalo tierno y delicioso para sorprender.",
+          imagen: "assets/arregloRosasOsodePelucheGalletasYglobo.jpg",
+          alt: "Arreglo de Rosas, Oso de Peluche, Galletas y Globo"
+        },
+        {
+          titulo: "Ramo de 36 Rosas Rojas, 12 Girasoles y 24 Chocolates Ferrero Rocher",
+          descripcion: "Un impresionante detalle floral con un toque dulce.",
+          imagen: "assets/r36rosasRojas12Girasoles24chocolatesFerreroRocher.jpg",
+          alt: "Ramo de 36 Rosas Rojas, 12 Girasoles y 24 Chocolates Ferrero Rocher"
+        },
+        {
+          titulo: "Arreglo en forma de Corazón con 36 Rosas y Chocolates Ferrero Rocher",
+          descripcion: "Una declaración de amor en un elegante diseño de corazón.",
+          imagen: "assets/arregloCorazon36rosasChocolatesFerreroRocher.jpg",
+          alt: "Arreglo en forma de Corazón con 36 Rosas y Chocolates Ferrero Rocher"
+        },
+        {
+          titulo: "Ramo de 9 Girasoles, 12 Rosas y Chocolates",
+          descripcion: "Un regalo lleno de luz, amor y dulzura.",
+          imagen: "assets/r9girasoles12rosasYchocolates.jpg",
+          alt: "Ramo de 9 Girasoles, 12 Rosas y Chocolates"
+        },
+        {
+          titulo: "Ramo de 5 Tulipanes",
+          descripcion: "Un delicado y elegante detalle floral.",
+          imagen: "assets/r5tulipanes.jpg",
+          alt: "Ramo de 5 Tulipanes"
+        },
+        {
+          titulo: "Ramo de 18 Rosas Rojas y 15 Chocolates Ferrero Rocher",
+          descripcion: "Una combinación romántica y deliciosa.",
+          imagen: "assets/r18rosasRojas15chocolatesFerreroRocher.jpg",
+          alt: "Ramo de 18 Rosas Rojas y 15 Chocolates Ferrero Rocher"
+        },
+        {
+          titulo: "Ramo de 24 Gerberas, Lloviznas y Solidago",
+          descripcion: "Un arreglo vibrante con un toque silvestre.",
+          imagen: "assets/r24gerberasLloviznasYsolidalgo.jpg",
+          alt: "Ramo de 24 Gerberas, Lloviznas y Solidago"
+        },
+        {
+          titulo: "Ramo de 24 Rosas Rojas, Baby, Oso de Peluche, 3 Globos y Chocolates Ferrero Rocher",
+          descripcion: "Un hermoso regalo con flores, ternura y dulzura.",
+          imagen: "assets/r24rosasRojasBabyOsodePeluche3globosYchocolatesFerreroRocher.jpg",
+          alt: "Ramo de 24 Rosas Rojas, Baby, Oso de Peluche, 3 Globos y Chocolates Ferrero Rocher"
+        },
+        {
+          titulo: "Hermoso Ramo de 30 Tulipanes",
+          descripcion: "Un regalo lleno de vida y color, perfecto para expresar los sentimientos más sinceros.",
+          imagen: "assets/r30tulipanes.jpg",
+          alt: "Ramo de 30 Tulipanes"
+        }
+      ];
 
+      // Contenedor donde se insertarán las tarjetas
+      const container = document.getElementById("ramos-container");
 
-    <div class="container mt-5">
-      <section id="home" class="text-center">
-        <h2 class="section-title">🌿 Bienvenidos</h2>
-        <p class="section-text">Explora nuestra colección de flores y arreglos únicos.</p>
-      </section>
-
-      <!-- Sección de Ramos de Flores -->
-      <section id="ramos" class="container py-5">
-        <h2 class="text-center section-title">💐 Nuestros Ramos Especiales</h2>
-        <p class="text-center section-text">Elige el ramo perfecto para cada ocasión.</p>
-
-        <div class="row" id="ramos-container">
-          <!-- Las tarjetas se generarán aquí con JavaScript -->
-        </div>
-      </section>
-
-      <script>
-        const ramos = [
-          {
-            titulo: "Ramo de Rosas Blancas y Rosadas",
-            descripcion: "Simboliza pureza e inocencia, ideal para bodas y nuevos comienzos.",
-            imagen: "assets/rosas.jpg",
-            alt: "Ramo de Rosas Blancas y Rosadas"
-          },
-          {
-            titulo: "Ramo de Gerberas",
-            descripcion: "Representa alegría y luz, perfecto para celebrar momentos especiales.",
-            imagen: "assets/gardeniasRosadas.jpg",
-            alt: "Ramo de Gardenias"
-          },
-          {
-            titulo: "Ramo de Rosas Rojas",
-            descripcion: "Expresa amor y pasión intensa, ideal para aniversarios y declaraciones de amor.",
-            imagen: "assets/rosasRojas.jpg",
-            alt: "Ramo de Rosas Rojas"
-          }
-        ];
-
-        // Contenedor donde se insertarán las tarjetas
-        const container = document.getElementById("ramos-container");
-
-        // Generar dinámicamente las tarjetas
-        ramos.forEach(ramo => {
-          const card = `
+      // Generar dinámicamente las tarjetas
+      ramos.forEach(ramo => {
+        const card = `
         <div class="col-md-4 col-12 mb-4">
           <div class="card shadow-sm">
             <img src="${ramo.imagen}" class="card-img-top img-hover" alt="${ramo.alt}">
@@ -140,82 +278,82 @@
           </div>
         </div>
       `;
-          container.innerHTML += card;
-        });
-      </script>
-  <!-- Sección de Ramos de Rosas Eternas -->
-  <section id="rosas-eternas" class="container py-5">
-    <h2 class="text-center section-title">🌹 Ramos de Rosas Eternas</h2>
-    <p class="text-center section-text">Descubre la belleza eterna en cada pétalo.</p>
+        container.innerHTML += card;
+      });
+    </script>
+    <!-- Sección de Ramos de Rosas Eternas -->
+    <section id="rosas-eternas" class="container py-5">
+      <h2 class="text-center section-title">🌹 Ramos de Rosas Eternas</h2>
+      <p class="text-center section-text">Descubre la belleza eterna en cada pétalo.</p>
 
-    <div class="row" id="rosas-eternas-container">
-      <!-- Las tarjetas se generarán aquí con JavaScript -->
-    </div>
-  </section>
+      <div class="row" id="rosas-eternas-container">
+        <!-- Las tarjetas se generarán aquí con JavaScript -->
+      </div>
+    </section>
 
-      <section id="about" class="text-center container py-5">
-        <h2 class="section-title">🌷 Nuestra Historia</h2>
-        <p class="section-text">
-          Jacky es una chica apasionada en lo que hace. Fue capaz de emprender con valentía su propio negocio, inspirado
-          en su
-          amor por la naturaleza y las flores. Desde pequeña, quedó maravillada por la belleza de los jardines de su
-          abuela,
-          donde cada flor parecía contar una historia.
-        </p>
-        <p class="section-text">
-          Con esfuerzo y dedicación, transformó su pasión en una marca reconocida por la calidad y el detalle en cada
-          ramo.
-          Cada arreglo floral que crea es más que un simple conjunto de flores: es una obra de arte llena de emociones,
-          diseñada para transmitir amor, alegría y gratitud.
-        </p>
-        <p class="section-text">
-          Hoy, su negocio florece con el mismo espíritu con el que comenzó: con amor, creatividad y el deseo de hacer del
-          mundo un lugar más bello, una flor a la vez. 💐✨
-        </p>
-      </section>
+    <section id="about" class="text-center container py-5">
+      <h2 class="section-title">🌷 Nuestra Historia</h2>
+      <p class="section-text">
+        Jacky es una chica apasionada en lo que hace. Fue capaz de emprender con valentía su propio negocio, inspirado
+        en su
+        amor por la naturaleza y las flores. Desde pequeña, quedó maravillada por la belleza de los jardines de su
+        abuela,
+        donde cada flor parecía contar una historia.
+      </p>
+      <p class="section-text">
+        Con esfuerzo y dedicación, transformó su pasión en una marca reconocida por la calidad y el detalle en cada
+        ramo.
+        Cada arreglo floral que crea es más que un simple conjunto de flores: es una obra de arte llena de emociones,
+        diseñada para transmitir amor, alegría y gratitud.
+      </p>
+      <p class="section-text">
+        Hoy, su negocio florece con el mismo espíritu con el que comenzó: con amor, creatividad y el deseo de hacer del
+        mundo un lugar más bello, una flor a la vez. 💐✨
+      </p>
+    </section>
 
-      <section id="services" class="container py-5">
-        <h2 class="text-center section-title">💐 Servicios</h2>
-        <p class="text-center section-text">Ramos personalizados.</p>
+    <section id="services" class="container py-5">
+      <h2 class="text-center section-title">💐 Servicios</h2>
+      <p class="text-center section-text">Ramos personalizados.</p>
 
-        <div class="row align-items-center">
-          <!-- Imagen del ramo -->
-          <div class="col-md-6 text-center">
-            <img
-              src="https://images.unsplash.com/photo-1503652601-557d07733ddc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFtb3MlMjBkZSUyMHJvc2FzfGVufDB8fDB8fHww"
-              alt="Ramo de Girasoles" class="img-fluid rounded shadow">
-          </div>
-
-          <!-- Historia y sensación de regalar -->
-          <div class="col-md-6">
-            <h3 class="fw-bold">🌻 El poder de un ramo</h3>
-            <p class="section-text">
-              Imagina la emoción de alguien al recibir un ramo de flores inesperado. Es más que un simple regalo,
-              es una caricia para el alma, un gesto que habla sin palabras.
-            </p>
-            <p class="section-text">
-              Un ramo de girasoles puede iluminar el día de alguien, transmitir esperanza y llenar un espacio de alegría.
-              Regalar flores es regalar emociones, es transformar un momento cotidiano en un instante inolvidable.
-            </p>
-            <a href="#" class="btn btn-success">Descubre más</a>
-          </div>
+      <div class="row align-items-center">
+        <!-- Imagen del ramo -->
+        <div class="col-md-6 text-center">
+          <img
+            src="https://images.unsplash.com/photo-1503652601-557d07733ddc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFtb3MlMjBkZSUyMHJvc2FzfGVufDB8fDB8fHww"
+            alt="Ramo de Girasoles" class="img-fluid rounded shadow">
         </div>
-      </section>
-      <!--<section id="events" class="container py-5">
+
+        <!-- Historia y sensación de regalar -->
+        <div class="col-md-6">
+          <h3 class="fw-bold">🌻 El poder de un ramo</h3>
+          <p class="section-text">
+            Imagina la emoción de alguien al recibir un ramo de flores inesperado. Es más que un simple regalo,
+            es una caricia para el alma, un gesto que habla sin palabras.
+          </p>
+          <p class="section-text">
+            Un ramo de girasoles puede iluminar el día de alguien, transmitir esperanza y llenar un espacio de alegría.
+            Regalar flores es regalar emociones, es transformar un momento cotidiano en un instante inolvidable.
+          </p>
+          <a href="#" class="btn btn-success">Descubre más</a>
+        </div>
+      </div>
+    </section>
+    <!--<section id="events" class="container py-5">
         <h2 class="text-center section-title">🎉 Eventos Especiales</h2>
         <p class="text-center section-text">Creamos momentos inolvidables con arreglos florales únicos para cada ocasión.
         </p>
 
         <div class="row align-items-center flex-md-row-reverse">
           <!-- Imagen del evento -->
-      <!-- <div class="col-md-6 text-center">
+    <!-- <div class="col-md-6 text-center">
             <img
               src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJvZGFzfGVufDB8fDB8fHww"
               alt="Decoración floral para eventos" class="img-fluid rounded shadow">
           </div> -->
 
-      <!-- Descripción del servicio de eventos -->
-      <!-- <div class="col-md-6">
+    <!-- Descripción del servicio de eventos -->
+    <!-- <div class="col-md-6">
             <h3 class="fw-bold">🌺 Magia en cada celebración</h3>
             <p class="section-text">
               Cada evento tiene su esencia, su historia y su emoción. Desde bodas elegantes hasta aniversarios íntimos,
@@ -228,32 +366,32 @@
             </p>
             <a href="#" class="btn btn-success">Ver opciones</a>
           </div> -->
-      <!-- </div>
+    <!-- </div>
       </section>--!>
 
       <!-- Mini Banner de Reproducción -->
-      <section class="video-banner">
-        <div class="container-fluid p-0">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/CzX8TEfnndo?autoplay=1&mute=0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
+    <section class="video-banner">
+      <div class="container-fluid p-0">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/CzX8TEfnndo?autoplay=1&mute=0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
-      </section>
+      </div>
+    </section>
 
 
-      <!-- Footer Botánico -->
+    <!-- Footer Botánico -->
 
-      <footer class="bg-light text-center p-3">
-        <p>🌸 © 2025 Jacky Flores y Detalles | Amor y Naturaleza en Cada Ramo 🌿</p>
-        <span>by hemisterhe Todos Los Derechos Reservados</span>
+    <footer class="bg-light text-center p-3">
+      <p>🌸 © 2025 Jacky Flores y Detalles | Amor y Naturaleza en Cada Ramo 🌿</p>
+      <span>by hemisterhe Todos Los Derechos Reservados</span>
 
-      </footer>
+    </footer>
 
 
 
-  </body>
+</body>
 
-  </html>
+</html>
