@@ -96,12 +96,14 @@
         <div class="container mt-3">
           <h5 class="mb-2">Palabras clave:</h5>
           <span class="badge bg-primary">Tulipanes</span>
-          <span class="badge bg-secondary">Rosas Naturales</span>
-          <span class="badge bg-success">Ramos</span>
+          <span class="badge bg-secondary">Naturales</span>
+
+          <span class="badge bg-success">Girasoles</span>
           <span class="badge bg-danger">Rosas Eternas</span>
           <span class="badge bg-warning text-dark">Chocolates</span>
           <span class="badge bg-info text-dark">Graduación</span>
-          <span class="badge bg-dark">Regalos</span>
+          <span class="badge bg-danger">Gerberas</span>
+          <span class="badge bg-dark">Peluche</span>
         </div>
 
         <div class="row justify-content-center">
@@ -118,13 +120,17 @@
 
       filtro.addEventListener("input", () => {
         const texto = filtro.value.toLowerCase();
+
         const ramosFiltrados = ramos.filter(ramo =>
           ramo.titulo.toLowerCase().includes(texto) ||
-          ramo.descripcion.toLowerCase().includes(texto)
+          ramo.descripcion.toLowerCase().includes(texto) ||
+          (ramo.categoria && ramo.categoria.toLowerCase().includes(texto))
         );
+
         renderRamos(ramosFiltrados);
       });
     </script>
+
     <!-- Sección de Ramos de Flores -->
     <section id="ramos" class="container py-5">
       <h2 class="text-center section-title">💐 Nuestros Ramos Especiales</h2>
@@ -141,145 +147,191 @@
           titulo: "Ramo de Rosas Blancas y Rosadas",
           descripcion: "Simboliza pureza e inocencia, ideal para bodas y nuevos comienzos.",
           imagen: "assets/rosas.jpg",
-          alt: "Ramo de Rosas Blancas y Rosadas"
+          alt: "Ramo de Rosas Blancas y Rosadas",
+          categoria: "rosas, ramos naturales"
+
         },
         {
           titulo: "Ramo de Gerberas",
           descripcion: "Representa alegría y luz, perfecto para celebrar momentos especiales.",
           imagen: "assets/gardeniasRosadas.jpg",
           alt: "Ramo de Gardenias"
+          ,
+          categoria: "gerberas, ramos naturales"
         },
         {
           titulo: "Ramo de Rosas Rojas",
           descripcion: "Expresa amor y pasión intensa, ideal para aniversarios y declaraciones de amor.",
           imagen: "assets/rosasRojas.jpg",
           alt: "Ramo de Rosas Rojas"
+          ,
+          categoria: "rosas, ramos naturales"
         },
         {
           titulo: "Ramo de 36 Rosas Rojas con Baby y Chocolates",
           descripcion: "Un elegante detalle de amor con rosas, chocolates y un toque especial.",
           imagen: "assets/ramo36rosasRojasBabyChocolates.jpg",
           alt: "Ramo de 36 Rosas Rojas con Baby y Chocolates"
+          ,
+          categoria: "rosas, ramos naturales,chocolates"
         },
         {
           titulo: "Ramo de 10 Gerberas, 24 Rosas y Chocolates",
           descripcion: "Una combinación perfecta de colores y dulzura para sorprender.",
           imagen: "assets/r10gerberas24rosasychocolates.jpg",
           alt: "Ramo de 10 Gerberas, 24 Rosas y Chocolates"
+          ,
+          categoria: "gerberas, ramos naturales,chocolates,gerberas,rosas"
         },
         {
           titulo: "Ramo de 11 Gerberas, 24 Rosas y 12 Chocolates Ferrero Rocher",
           descripcion: "Ideal para demostrar afecto con un toque dulce y colorido.",
           imagen: "assets/r11gerberas24rosas12chocolatesrerrerorocher.jpg",
           alt: "Ramo de 11 Gerberas, 24 Rosas y 12 Chocolates Ferrero Rocher"
+          ,
+          categoria: "rosas, ramos naturales,gerberas,chocolates"
         },
         {
           titulo: "Ramo de 9 Gerberas, Chocolates y Tarjeta",
           descripcion: "Un hermoso detalle con flores, dulces y un mensaje especial.",
           imagen: "assets/r9gerberaschocolatesytarjeta.jpg",
           alt: "Ramo de 9 Gerberas, Chocolates y Tarjeta"
+          ,
+          categoria: "gerberas, ramos naturales,chocolate"
         },
         {
           titulo: "Ramo de 12 Rosas y 1 Girasol",
           descripcion: "Una combinación vibrante de rosas y girasoles para alegrar el día.",
           imagen: "assets/r12rosas1girasol.jpg",
           alt: "Ramo de 12 Rosas y 1 Girasol"
+          ,
+          categoria: "rosas, ramos naturales,girasol"
         },
         {
           titulo: "Ramo de 24 Rosas Rojas, Solidago y Coronas Metal",
           descripcion: "Un arreglo sofisticado con un toque metálico y flores vibrantes.",
           imagen: "assets/r24rosasrojasSolidagoyCoronasMetal.jpg",
           alt: "Ramo de 24 Rosas Rojas, Solidago y Coronas Metal"
+          ,
+          categoria: "rosas, ramos naturales,solidalgo"
         },
         {
           titulo: "Ramo de 12 Gerberas, Clavel y Eucalipto",
           descripcion: "Una mezcla fresca y delicada con flores aromáticas.",
           imagen: "assets/r12gerberasClavelEucalipto.jpg",
           alt: "Ramo de 12 Gerberas, Clavel y Eucalipto"
+          ,
+          categoria: "gerberas, ramos naturales,clavel,eucalipto"
         },
         {
           titulo: "Ramo de 24 Rosas Rosas y Chocolates",
           descripcion: "Un elegante detalle de rosas con un dulce acompañamiento.",
           imagen: "assets/r24rosasRosasChocolates.jpg",
           alt: "Ramo de 24 Rosas Rosas y Chocolates"
+          ,
+          categoria: "rosas, ramos naturales,chocolates"
         },
         {
           titulo: "Ramo de 24 Rosas Blancas y Rosadas, Clavel y Eucalipto",
           descripcion: "Una combinación romántica y elegante para toda ocasión.",
           imagen: "assets/r24rosasBlancasYrosadasClavelYeucalipto.jpg",
-          alt: "Ramo de 24 Rosas Blancas y Rosadas, Clavel y Eucalipto"
+          alt: "Ramo de 24 Rosas Blancas y Rosadas, Clavel y Eucalipto",
+          categoria: "rosas, ramos naturales,clavel,eucalipto"
         },
         {
           titulo: "Ramo de 12 Rosas, 1 Girasol y 1 Birrete de Graduación Personalizado",
           descripcion: "Un regalo perfecto para celebrar logros y nuevos comienzos.",
           imagen: "assets/r12rosas1girasol1birreteGraduacionPersonalizado.jpg",
           alt: "Ramo de 12 Rosas, 1 Girasol y 1 Birrete de Graduación Personalizado"
+          ,
+          categoria: "rosas, ramos naturales,graduacion"
         },
         {
           titulo: "Ramo de 12 Rosas Rosadas, Lirios y Eucaliptos",
           descripcion: "Un detalle floral elegante con un aroma encantador.",
           imagen: "assets/r12rosasRosadasLiriosYeucaliptos.jpg",
-          alt: "Ramo de 12 Rosas Rosadas, Lirios y Eucaliptos"
+          alt: "Ramo de 12 Rosas Rosadas, Lirios y Eucaliptos",
+          categoria: "rosas, ramos naturales,lirios"
         },
         {
           titulo: "Ramo de 12 Girasoles, 24 Rosas Rojas, Chocolates y Globo",
           descripcion: "Una expresión de alegría, amor y dulzura en un solo arreglo.",
           imagen: "assets/r12girasoles24rosasRojasChocolatesYglobo.jpg",
           alt: "Ramo de 12 Girasoles, 24 Rosas Rojas, Chocolates y Globo"
+          ,
+          categoria: "rosas, ramos naturales,girasoles,chocolates,globo"
         },
         {
           titulo: "Ramo de Fresas, Chocolates Ferrero Rocher y Baby",
           descripcion: "Un detalle único que combina frescura y dulzura.",
           imagen: "assets/rFresasChocolatesFerreroRocherYbaby.jpg",
           alt: "Ramo de Fresas, Chocolates Ferrero Rocher y Baby"
+          ,
+          categoria: "fresas, ramos naturales,chocolates"
         },
         {
           titulo: "Arreglo Floral de 24 Rosas, Girasol, Clavel y Chocolates",
           descripcion: "Una combinación perfecta de colores y dulces.",
           imagen: "assets/ArregloFloral24rosasGirasolClavelYChocolates.jpg",
           alt: "Arreglo Floral de 24 Rosas, Girasol, Clavel y Chocolates"
+          ,
+          categoria: "rosas, ramos naturales,girasol,chocolates"
         },
         {
           titulo: "Arreglo de Rosas, Oso de Peluche, Galletas y Globo",
           descripcion: "Un regalo tierno y delicioso para sorprender.",
           imagen: "assets/arregloRosasOsodePelucheGalletasYglobo.jpg",
           alt: "Arreglo de Rosas, Oso de Peluche, Galletas y Globo"
+          ,
+          categoria: "rosas, ramos naturales,peluches,galletas,globo"
         },
         {
           titulo: "Ramo de 36 Rosas Rojas, 12 Girasoles y 24 Chocolates Ferrero Rocher",
           descripcion: "Un impresionante detalle floral con un toque dulce.",
           imagen: "assets/r36rosasRojas12Girasoles24chocolatesFerreroRocher.jpg",
           alt: "Ramo de 36 Rosas Rojas, 12 Girasoles y 24 Chocolates Ferrero Rocher"
+          ,
+          categoria: "rosas, ramos naturales,girasoles,chocolates"
         },
         {
           titulo: "Arreglo en forma de Corazón con 36 Rosas y Chocolates Ferrero Rocher",
           descripcion: "Una declaración de amor en un elegante diseño de corazón.",
           imagen: "assets/arregloCorazon36rosasChocolatesFerreroRocher.jpg",
           alt: "Arreglo en forma de Corazón con 36 Rosas y Chocolates Ferrero Rocher"
+          ,
+          categoria: "rosas, ramos naturales,chocolates"
         },
         {
           titulo: "Ramo de 9 Girasoles, 12 Rosas y Chocolates",
           descripcion: "Un regalo lleno de luz, amor y dulzura.",
           imagen: "assets/r9girasoles12rosasYchocolates.jpg",
           alt: "Ramo de 9 Girasoles, 12 Rosas y Chocolates"
+          ,
+          categoria: "rosas, ramos naturales,girasoles,chocolates"
         },
         {
           titulo: "Ramo de 5 Tulipanes",
           descripcion: "Un delicado y elegante detalle floral.",
           imagen: "assets/r5tulipanes.jpg",
           alt: "Ramo de 5 Tulipanes"
+          ,
+          categoria: "tulipanes, ramos naturales"
         },
         {
           titulo: "Ramo de 18 Rosas Rojas y 15 Chocolates Ferrero Rocher",
           descripcion: "Una combinación romántica y deliciosa.",
           imagen: "assets/r18rosasRojas15chocolatesFerreroRocher.jpg",
           alt: "Ramo de 18 Rosas Rojas y 15 Chocolates Ferrero Rocher"
+          ,
+          categoria: "rosas, ramos naturales,chocolates"
         },
         {
           titulo: "Ramo de 24 Gerberas, Lloviznas y Solidago",
           descripcion: "Un arreglo vibrante con un toque silvestre.",
           imagen: "assets/r24gerberasLloviznasYsolidalgo.jpg",
           alt: "Ramo de 24 Gerberas, Lloviznas y Solidago"
+          ,
+          categoria: "gerberas, ramos naturales"
         },
         {
           titulo: "Ramo de 24 Rosas Rojas, Baby, Oso de Peluche, 3 Globos y Chocolates Ferrero Rocher",
@@ -292,408 +344,541 @@
           descripcion: "Un regalo lleno de vida y color, perfecto para expresar los sentimientos más sinceros.",
           imagen: "assets/r30tulipanes.jpg",
           alt: "Ramo de 30 Tulipanes"
+          ,
+          categoria: "tulipanes, ramos naturales"
         },
         {
           titulo: "Ramo de 12 Rosas y 1 Girasol con Chocolates y Solidago",
           descripcion: "Una combinación encantadora de rosas y girasol, acompañada de chocolates para un detalle especial.",
           imagen: "assets/r12rosas1girasolChocolatesYsolidalgo.jpg",
           alt: "Ramo de 12 Rosas y 1 Girasol con Chocolates y Solidago"
+          ,
+          categoria: "rosas, ramos naturales,girasol,chocolates"
         },
         {
           titulo: "Ramo de 12 Rosas con Solidago y Tarjeta",
           descripcion: "Un hermoso ramo de rosas con solidago, ideal para expresar sentimientos con un toque especial.",
           imagen: "assets/r12rosasSolidalgoYtarjeta.jpg",
           alt: "Ramo de 12 Rosas con Solidago y Tarjeta"
+          ,
+          categoria: "rosas, ramos naturales"
         },
         {
           titulo: "Ramo de 24 Rosas y 6 Girasoles con Chocolates y Globo Personalizado",
           descripcion: "Una combinación perfecta de elegancia y alegría, acompañada de chocolates y un globo especial.",
           imagen: "assets/r24rosas6girasolesChocolatesYGloboPersonalizado.jpg",
           alt: "Ramo de 24 Rosas y 6 Girasoles con Chocolates y Globo Personalizado"
+          ,
+          categoria: "rosas, ramos naturales,girasoles"
         },
         {
-          "titulo": "Ramo de 7 Rosas",
+          "titulo": "Ramo de 7 Rosas Eternas",
           "descripcion": "Un hermoso ramo de 7 rosas, perfecto para expresar amor y admiración.",
           "imagen": "assets/rEramos7rosas.jpg",
           "alt": "Ramo de 7 rosas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas - Variante 2",
+          "titulo": "Ramo de 7 Rosas Eternas - Variante 2",
           "descripcion": "Un elegante ramo de 7 rosas en una presentación especial.",
           "imagen": "assets/rEramos7rosas2.jpg",
           "alt": "Ramo de 7 rosas variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas - Variante 3",
+          "titulo": "Ramo de 7 Rosas Eternas- Variante 3",
           "descripcion": "Un delicado ramo de 7 rosas con un toque romántico.",
           "imagen": "assets/rEramos7rosas3.jpg",
           "alt": "Ramo de 7 rosas variante 3"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas - Variante 4",
+          "titulo": "Ramo de 7 Rosas Eternas - Variante 4",
           "descripcion": "Un hermoso ramo de 7 rosas, ideal para cualquier ocasión.",
           "imagen": "assets/rEramos7rosas4.jpg",
           "alt": "Ramo de 7 rosas variante 4"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 20 Rosas y Mariposas",
+          "titulo": "Ramo de 20 Rosas Eternas y Mariposas",
           "descripcion": "Un ramo encantador de 20 rosas decorado con mariposas.",
           "imagen": "assets/rEramos20rosasYmariposas.jpg",
           "alt": "Ramo de 20 rosas y mariposas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 20 Rosas",
+          "titulo": "Ramo de 20 Rosas Eternas",
           "descripcion": "Un bouquet elegante de 20 rosas frescas.",
           "imagen": "assets/rEramos20rosas.jpg",
           "alt": "Ramo de 20 rosas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 20 Rosas y Corona de Metal",
+          "titulo": "Ramo de 20 Rosas Eternas y Corona de Metal",
           "descripcion": "Un lujoso ramo de 20 rosas adornado con una corona de metal.",
           "imagen": "assets/rEramos20rosasYcoronaMetal.jpg",
           "alt": "Ramo de 20 rosas con corona de metal"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 20 Rosas y Corona con Detalles Baby",
+          "titulo": "Ramo de 20 Rosas Eternas y Corona con Detalles Baby",
           "descripcion": "Un tierno ramo de 20 rosas con detalles inspirados en bebés.",
           "imagen": "assets/rEramos20rosasYcoronaYbaby.jpg",
           "alt": "Ramo de 20 rosas con detalles baby"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas con Listón Personalizado y Chocolates",
+          "titulo": "Ramo de 10 Rosas Eternas con Listón Personalizado y Chocolates",
           "descripcion": "Un hermoso ramo de 10 rosas con listón personalizado y chocolates.",
           "imagen": "assets/rEramos10rosasListonPersonalizadoYchocolates.jpg",
           "alt": "Ramo de 10 rosas con listón personalizado y chocolates"
         },
         {
-          "titulo": "Ramo de 7 Rosas Temática y Corona de Metal",
+          "titulo": "Ramo de 7 Rosas Eternas Temática y Corona de Metal",
           "descripcion": "Un ramo de 7 rosas decorado con una temática especial y una corona de metal.",
           "imagen": "assets/rEramos7rosasTematicaYcoronaMetal.jpg",
           "alt": "Ramo de 7 rosas con temática y corona de metal"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas",
+          "titulo": "Ramo de 10 Rosas Eternas",
           "descripcion": "Un clásico ramo de 10 rosas para sorprender a alguien especial.",
           "imagen": "assets/rEramos10rosas.jpg",
           "alt": "Ramo de 10 rosas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Girasoles con Corona de Metal y Chocolates",
+          "titulo": "Ramo de 7 Girasoles Eternos con Corona de Metal y Chocolates",
           "descripcion": "Un radiante ramo de 7 girasoles con corona de metal y chocolates.",
           "imagen": "assets/rEramos7girasolesCoronaMetalYchocolates.jpg",
           "alt": "Ramo de 7 girasoles con corona de metal y chocolates"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 30 Rosas",
+          "titulo": "Ramo de 30 Rosas Eternas",
           "descripcion": "Un espectacular ramo de 30 rosas ideal para grandes celebraciones.",
           "imagen": "assets/rEramos30rosas.jpg",
           "alt": "Ramo de 30 rosas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas Temática y Corona de Metal",
+          "titulo": "Ramo de 7 Rosas Eternas Temática y Corona de Metal",
           "descripcion": "Un hermoso ramo de 7 rosas con una temática especial y adornado con corona de metal.",
           "imagen": "assets/rEramos7rosasTematicaCoronaMetal.jpg",
           "alt": "Ramo de 7 rosas temática con corona de metal"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas Temática Aurora con Corona de Metal",
+          "titulo": "Ramo de 7 Rosas Eternas Temática Aurora con Corona de Metal",
           "descripcion": "Un encantador ramo de 7 rosas inspirado en Aurora, con una elegante corona de metal.",
           "imagen": "assets/rEramos7rosasTematicaCoronaMetalAurora.jpg",
           "alt": "Ramo de 7 rosas temática Aurora con corona de metal"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas Temática Aurora con Corona de Metal - Variante 2",
+          "titulo": "Ramo de 7 Rosas Eternas Temática Aurora con Corona de Metal - Variante 2",
           "descripcion": "Una versión especial del ramo inspirado en Aurora con una corona de metal.",
           "imagen": "assets/rEramos7rosasTematicaCoronaMetalAurora2.jpg",
           "alt": "Ramo de 7 rosas temática Aurora con corona de metal variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas Temática Campanita con Corona de Metal",
+          "titulo": "Ramo de 7 Rosas Eternas Temática Campanita con Corona de Metal",
           "descripcion": "Un hermoso ramo de 7 rosas inspirado en Campanita, con detalles mágicos y una corona de metal.",
           "imagen": "assets/rEramos7rosasTematicaCoronaMetalCampanita.jpg",
           "alt": "Ramo de 7 rosas temática Campanita con corona de metal"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas Temática Rapunzel con Corona de Metal",
+          "titulo": "Ramo de 7 Rosas Eternas Temática Rapunzel con Corona de Metal",
           "descripcion": "Un mágico ramo de 7 rosas inspirado en Rapunzel, con una hermosa corona de metal.",
           "imagen": "assets/rEramos7rosasTematicaCoronaMetalrapunsel.jpg",
           "alt": "Ramo de 7 rosas temática Rapunzel con corona de metal"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas Temática Rapunzel con Corona de Metal - Variante 2",
+          "titulo": "Ramo de 7 Rosas Eternas Temática Rapunzel con Corona de Metal - Variante 2",
           "descripcion": "Una versión especial del ramo inspirado en Rapunzel con detalles únicos y corona de metal.",
           "imagen": "assets/rEramos7rosasTematicaCoronaMetalrapunsel2.jpg",
           "alt": "Ramo de 7 rosas temática Rapunzel con corona de metal variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 20 Rosas con Corona de Metal y Chocolates",
+          "titulo": "Ramo de 20 Rosas Eternas con Corona de Metal y Chocolates",
           "descripcion": "Un elegante ramo de 20 rosas con una distinguida corona de metal y deliciosos chocolates.",
           "imagen": "assets/rEramos20rosasCoronaMetalChocolates.jpg",
           "alt": "Ramo de 20 rosas con corona de metal y chocolates"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 15 Rosas con Luces LED y Chocolates",
+          "titulo": "Ramo de 15 Rosas Eternas con Luces LED y Chocolates",
           "descripcion": "Un hermoso ramo de 15 rosas con luces LED y una selección de chocolates.",
           "imagen": "assets/rEramos15rosasLucesLedChocolates.jpg",
           "alt": "Ramo de 15 rosas con luces LED y chocolates"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 13 Rosas con Luces LED y Corona de Mariposas",
+          "titulo": "Ramo de 13 Rosas Eternas con Luces LED y Corona de Mariposas",
           "descripcion": "Un delicado ramo de 13 rosas iluminado con luces LED y decorado con una corona de mariposas.",
           "imagen": "assets/rEramos13rosasLucesLedCoronaMariposas.jpg",
           "alt": "Ramo de 13 rosas con luces LED y corona de mariposas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 20 Rosas con Chocolates y Osito Stitch",
+          "titulo": "Ramo de 20 Rosas Eternas con Chocolates y Osito Stitch",
           "descripcion": "Un tierno ramo de 20 rosas acompañado de chocolates y un adorable osito de Stitch.",
           "imagen": "assets/rEramos20RosasChocolatesYositoStich.jpg",
           "alt": "Ramo de 20 rosas con chocolates y osito Stitch"
+          ,
+          categoria: "rosas eternas,peluche"
         },
         {
-          "titulo": "Ramo de 20 Rosas con Chocolates y Osito Stitch Rosado",
+          "titulo": "Ramo de 20 Rosas Eternas con Chocolates y Osito Stitch Rosado",
           "descripcion": "Una versión especial del ramo de 20 rosas con chocolates y un osito Stitch rosado.",
           "imagen": "assets/rEramos20RosasChocolatesYositoStichRosado.jpg",
           "alt": "Ramo de 20 rosas con chocolates y osito Stitch rosado"
+          ,
+          categoria: "rosas eternas,peluche"
         },
         {
-          "titulo": "Ramo de 20 Rosas con Corona de Metal y Listón de Cumpleaños",
+          "titulo": "Ramo de 20 Rosas Eternas con Corona de Metal y Listón de Cumpleaños",
           "descripcion": "Un espectacular ramo de 20 rosas adornado con una corona de metal y un listón especial de cumpleaños.",
           "imagen": "assets/rEramos20RosasCoronaMetalYlistonCumpleaños.jpg",
           "alt": "Ramo de 20 rosas con corona de metal y listón de cumpleaños"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 8 Rosas y 1 Girasol con Birrete de Graduación",
+          "titulo": "Ramo de 8 Rosas Eternas y 1 Girasol con Birrete de Graduación",
           "descripcion": "Un ramo especial de 8 rosas y 1 girasol con un birrete de graduación, perfecto para celebrar logros académicos.",
           "imagen": "assets/rEramos8Rosas1girasolYbirretedeGraduacion.jpg",
           "alt": "Ramo de 8 rosas y 1 girasol con birrete de graduación"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 8 Rosas y 1 Girasol con Birrete de Graduación - Variante 2",
+          "titulo": "Ramo de 8 Rosas Eternas y 1 Girasol con Birrete de Graduación - Variante 2",
           "descripcion": "Una versión alternativa del ramo de 8 rosas y 1 girasol con birrete de graduación.",
           "imagen": "assets/rEramos8Rosas1girasolYbirretedeGraduacion2.jpg",
           "alt": "Ramo de 8 rosas y 1 girasol con birrete de graduación variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 8 Rosas y 1 Girasol con Birrete de Graduación - Variante 3",
+          "titulo": "Ramo de 8 Rosas Eternas y 1 Girasol con Birrete de Graduación - Variante 3",
           "descripcion": "Otra presentación del ramo de 8 rosas y 1 girasol con birrete de graduación.",
           "imagen": "assets/rEramos8Rosas1girasolYbirretedeGraduacion3.jpg",
           "alt": "Ramo de 8 rosas y 1 girasol con birrete de graduación variante 3"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 8 Rosas y 1 Girasol con Birrete de Graduación - Variante 4",
+          "titulo": "Ramo de 8 Rosas Eternas y 1 Girasol con Birrete de Graduación - Variante 4",
           "descripcion": "Una presentación adicional del ramo de 8 rosas y 1 girasol con birrete de graduación.",
           "imagen": "assets/rEramos8Rosas1girasolYbirretedeGraduacion4.jpg",
           "alt": "Ramo de 8 rosas y 1 girasol con birrete de graduación variante 4"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 8 Rosas con Hojas Temática Tinkerbell y Corona de Metal",
+          "titulo": "Ramo de 8 Rosas Eternas con Hojas Temática Tinkerbell y Corona de Metal",
           "descripcion": "Un ramo especial de 8 rosas con hojas inspirado en Tinkerbell y decorado con una corona de metal.",
           "imagen": "assets/rEramos8rosasConHojasTematicaTinkerbellYcoronademetal.jpg",
           "alt": "Ramo de 8 rosas con hojas temática Tinkerbell y corona de metal"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 8 Rosas con Hojas Temática Tinkerbell y Corona de Metal - Variante 2",
+          "titulo": "Ramo de 8 Rosas Eternas con Hojas Temática Tinkerbell y Corona de Metal - Variante 2",
           "descripcion": "Una versión alternativa del ramo de 8 rosas con hojas inspirado en Tinkerbell con corona de metal.",
           "imagen": "assets/rEramos8rosasConHojasTematicaTinkerbellYcoronademetal2.jpg",
           "alt": "Ramo de 8 rosas con hojas temática Tinkerbell y corona de metal variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
           "titulo": "Canasta de Rosas Eternas y Chocolates",
           "descripcion": "Una elegante canasta con rosas eternas y una selección de chocolates.",
           "imagen": "assets/canastaRosasEternasYchocolates.jpg",
           "alt": "Canasta con rosas eternas y chocolates"
+          ,
+          categoria: "rosas eternas"
         },
         {
           "titulo": "Caja con Tulipanes",
           "descripcion": "Una hermosa caja con tulipanes frescos, ideal para regalar en cualquier ocasión.",
           "imagen": "assets/rECajacontulipanes.jpg",
           "alt": "Caja con tulipanes"
+          ,
+          categoria: "rosas eternas,tulipanes"
         },
         {
           "titulo": "Caja con Tulipanes - Variante 2",
           "descripcion": "Una versión especial de la caja con tulipanes para un regalo aún más especial.",
           "imagen": "assets/rECajacontulipanes2.jpg",
           "alt": "Caja con tulipanes variante 2"
+          ,
+          categoria: "rosas eternas,tulipanes"
         },
         {
           "titulo": "Canasta de Rosas Eternas y Chocolates - Variante 2",
           "descripcion": "Una alternativa de la canasta con rosas eternas y chocolates, ideal para ocasiones especiales.",
           "imagen": "assets/canastaRosasEternasYchocolates2.jpg",
           "alt": "Canasta con rosas eternas y chocolates variante 2"
+          ,
+          categoria: "rosas eternas, chocolates"
         },
         {
           "titulo": "Canasta de Rosas Eternas y Chocolates - Variante 3",
           "descripcion": "Otra presentación especial de la canasta con rosas eternas y chocolates.",
           "imagen": "assets/canastaRosasEternasYchocolates3.jpg",
           "alt": "Canasta con rosas eternas y chocolates variante 3"
+          ,
+          categoria: "rosas eternas,chocolates"
         },
         {
-          "titulo": "Ramo de 20 Rosas y Chocolates",
+          "titulo": "Ramo de 20 Rosas Eternas y Chocolates",
           "descripcion": "Un romántico ramo de 20 rosas acompañado de chocolates para un regalo especial.",
           "imagen": "assets/rEramos20rosasYchocolates.jpg",
           "alt": "Ramo de 20 rosas y chocolates"
+          ,
+          categoria: "rosas eternas, chocolates"
         },
         {
-          "titulo": "Ramo de 35 Rosas, Chocolates y Globos",
+          "titulo": "Ramo de 35 Rosas Eternas, Chocolates y Globos",
           "descripcion": "Un espectacular ramo de 35 rosas con chocolates y globos, perfecto para celebraciones.",
           "imagen": "assets/rEramos35rosasYchocolatesYGlobos.jpg",
           "alt": "Ramo de 35 rosas con chocolates y globos"
+          ,
+          categoria: "rosas eternas,chocolates"
         },
         {
-          "titulo": "Ramo de 50 Rosas",
+          "titulo": "Ramo de 50 Rosas Eternas",
           "descripcion": "Un lujoso ramo de 50 rosas, ideal para expresar los sentimientos más profundos.",
           "imagen": "assets/rEramos50rosas.jpg",
-          "alt": "Ramo de 50 rosas"
+          "alt": "Ramo de 50 rosas",
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 50 Rosas - Variante 2",
+          "titulo": "Ramo de 50 Rosas Eternas - Variante 2",
           "descripcion": "Una versión especial del lujoso ramo de 50 rosas.",
           "imagen": "assets/rEramos50rosas2.jpg",
           "alt": "Ramo de 50 rosas variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 80 Rosas",
+          "titulo": "Ramo de 80 Rosas Eternas",
           "descripcion": "Un impresionante ramo de 80 rosas, ideal para grandes ocasiones.",
           "imagen": "assets/rEramos80rosas.jpg",
           "alt": "Ramo de 80 rosas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 80 Rosas - Variante 2",
+          "titulo": "Ramo de 80 Rosas Eternas - Variante 2",
           "descripcion": "Otra hermosa versión del ramo de 80 rosas.",
           "imagen": "assets/rEramos80rosas2.jpg",
           "alt": "Ramo de 80 rosas variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Girasol Individual",
+          "titulo": "Girasol Eterno Individual",
           "descripcion": "Un hermoso girasol individual, perfecto para regalar un detalle especial.",
           "imagen": "assets/rEgirasolesIndividuales.jpg",
           "alt": "Girasol individual"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Girasol Individual - Variante 2",
+          "titulo": "Girasol Eterno Individual - Variante 2",
           "descripcion": "Otra versión del girasol individual.",
           "imagen": "assets/rEgirasolesIndividuales2.jpg",
           "alt": "Girasol individual variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Girasol Individual - Variante 3",
+          "titulo": "Girasol Eterno Individual - Variante 3",
           "descripcion": "Un girasol individual con una presentación especial.",
           "imagen": "assets/rEgirasolesIndividuales3.jpg",
           "alt": "Girasol individual variante 3"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Girasol Individual - Variante 4",
+          "titulo": "Girasol Eterno Individual - Variante 4",
           "descripcion": "Una cuarta presentación del girasol individual.",
           "imagen": "assets/rEgirasolesIndividuales4.jpg",
           "alt": "Girasol individual variante 4"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Girasol Individual - Variante 5",
+          "titulo": "Girasol Eterno Individual - Variante 5",
           "descripcion": "Un girasol individual con una envoltura especial.",
           "imagen": "assets/rEgirasolesIndividuales5.jpg",
           "alt": "Girasol individual variante 5"
+          ,
+          categoria: "rosas eternas"
         },
         {
           "titulo": "Ramo en Forma de Corazón y Chocolates",
           "descripcion": "Un hermoso ramo en forma de corazón acompañado de chocolates.",
           "imagen": "assets/rEramoenformadecorazonychocolates.jpg",
           "alt": "Ramo en forma de corazón y chocolates"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas",
+          "titulo": "Ramo de 10 Rosas Eternas",
           "descripcion": "Un clásico ramo de 10 rosas, ideal para cualquier ocasión.",
           "imagen": "assets/rEramo10rosas.jpg",
           "alt": "Ramo de 10 rosas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas - Variante 2",
+          "titulo": "Ramo de 10 Rosas Eternas - Variante 2",
           "descripcion": "Otra versión elegante del ramo de 10 rosas.",
           "imagen": "assets/rEramo10rosas2.jpg",
           "alt": "Ramo de 10 rosas variante 2"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas - Variante 3",
+          "titulo": "Ramo de 10 Rosas Eternas - Variante 3",
           "descripcion": "Una tercera presentación del ramo de 10 rosas.",
           "imagen": "assets/rEramo10rosas3.jpg",
           "alt": "Ramo de 10 rosas variante 3"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas - Variante 4",
+          "titulo": "Ramo de 10 Rosas Eternas - Variante 4",
           "descripcion": "Un hermoso ramo de 10 rosas con una envoltura especial.",
           "imagen": "assets/rEramo10rosas4.jpg",
           "alt": "Ramo de 10 rosas variante 4"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas - Variante 5",
+          "titulo": "Ramo de 10 Rosas Eternas - Variante 5",
           "descripcion": "Una quinta versión del ramo de 10 rosas.",
           "imagen": "assets/rEramo10rosas5.jpg",
           "alt": "Ramo de 10 rosas variante 5"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas - Variante 6",
+          "titulo": "Ramo de 10 Rosas Eternas - Variante 6",
           "descripcion": "Una sexta presentación del ramo de 10 rosas.",
           "imagen": "assets/rEramo10rosas6.jpg",
           "alt": "Ramo de 10 rosas variante 6"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 10 Rosas - Variante 7",
+          "titulo": "Ramo de 10 Rosas Eternas - Variante 7",
           "descripcion": "Una séptima versión del ramo de 10 rosas.",
           "imagen": "assets/rEramo10rosas7.jpg",
           "alt": "Ramo de 10 rosas variante 7"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 7 Rosas - Temática Frozen",
+          "titulo": "Ramo de 7 Rosas Eternas- Temática Frozen",
           "descripcion": "Un encantador ramo de 7 rosas inspirado en Frozen.",
           "imagen": "assets/rEramo7rosasTematicaFrozen.jpg",
           "alt": "Ramo de 7 rosas temática Frozen"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 12 Tulipanes con Chocolates",
+          "titulo": "Ramo de 12 Tulipanes Eternos con Chocolates",
           "descripcion": "Un elegante ramo de 12 tulipanes acompañado de deliciosos chocolates.",
           "imagen": "assets/rEramo12tulipanesChocolates.jpg",
           "alt": "Ramo de 12 tulipanes con chocolates"
+          ,
+          categoria: "rosas eternas,tulipanes"
         },
         {
-          "titulo": "Ramo de 6 Rosas",
+          "titulo": "Ramo de 6 Rosas Eternos",
           "descripcion": "Un delicado ramo de 6 rosas, ideal para un detalle especial.",
           "imagen": "assets/rEramo6rosas.jpg",
           "alt": "Ramo de 6 rosas"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de Tulipanes",
+          "titulo": "Ramo de Tulipanes Eternos",
           "descripcion": "Un hermoso ramo de tulipanes frescos.",
           "imagen": "assets/rEramoTulipanes.jpg",
           "alt": "Ramo de tulipanes"
+          ,
+          categoria: "rosas eternas, tulipanes"
         },
         {
-          "titulo": "Ramo de Tulipanes - Variante 2",
+          "titulo": "Ramo de Tulipanes Eternos - Variante 2",
           "descripcion": "Otra presentación del elegante ramo de tulipanes.",
           "imagen": "assets/rEramoTulipanes2.jpg",
           "alt": "Ramo de tulipanes variante 2"
+          ,
+          categoria: "rosas eternas, tulipanes"
         },
         {
-          "titulo": "Ramo de Tulipanes - Variante 3",
+          "titulo": "Ramo de Tulipanes Eternos - Variante 3",
           "descripcion": "Una tercera versión del ramo de tulipanes.",
           "imagen": "assets/rEramoTulipanes3.jpg",
           "alt": "Ramo de tulipanes variante 3"
+          ,
+          categoria: "rosas eternas, tulipanes"
         },
         {
           "titulo": "Ramo de Gomitas",
           "descripcion": "Un divertido y colorido ramo hecho con gomitas.",
           "imagen": "assets/ramodegomitas.jpg",
           "alt": "Ramo de gomitas"
+          ,
+          categoria: "rosas eternas,gomitas"
         },
         {
-          "titulo": "Ramo de 12 Rosas Temáticas Cenicienta con Luces LED y Corona",
+          "titulo": "Ramo de 12 Rosas Eternas Temáticas Cenicienta con Luces LED y Corona",
           "descripcion": "Un mágico ramo de 12 rosas inspirado en Cenicienta, con luces LED y corona.",
           "imagen": "assets/rEramo12rosastematicasCenicientaLucesledCorona.jpg",
           "alt": "Ramo de 12 rosas temáticas Cenicienta con luces LED y corona"
+          ,
+          categoria: "rosas eternas"
         },
         {
-          "titulo": "Ramo de 12 Rosas Temáticas Princesas con Luces LED y Corona",
+          "titulo": "Ramo de 12 Rosas Eternas Temáticas Princesas con Luces LED y Corona",
           "descripcion": "Un hermoso ramo de 12 rosas inspirado en las princesas, con luces LED y corona.",
           "imagen": "assets/rEramo12rosastematicasPrincesasLucesledCorona.jpg",
           "alt": "Ramo de 12 rosas temáticas princesas con luces LED y corona"
+          ,
+          categoria: "rosas eternas"
         }
 
 
