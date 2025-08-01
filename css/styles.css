@@ -1,0 +1,315 @@
+/* ==========================
+   🎨 VARIABLES: :root
+   ========================== */
+
+:root {
+  --color-principal: rgba(214, 7, 75, 255); /* tu rosado neón */
+  --color-rosado-pastel: #f9c5d1;
+  /* --color-rosado-coral: #f88379; */
+  --color-rosado-medio: #ec407a;
+  --color-rosado-viejo: #d4879c;
+  --color-melocoton-claro: #ffc1cc;
+
+  /* Tipografía */
+  --fuente-principal: "Montserrat", sans-serif;
+
+  /* Tamaños */
+  --navbar-height: 17vh;
+  --navbar-brand-width: 100px;
+  --navbar-brand-height: 75px;
+  --titulo-principal: 3rem;
+  --parrafo: 1.25rem;
+
+  /* Sombra */
+  --sombra-principal: 0 0 25px white, 0 0 8px rgba(248, 247, 243, 0.996);
+}
+
+/* ==========================
+   🎡 Carrusel
+   ========================== */
+.carousel-item {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item image {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+#bannerCarrusel .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  font-family: var(--fuente-principal);
+}
+
+/* ==========================
+   🌐 Navbar
+   ========================== */
+.navbar {
+  height: var(--navbar-height);
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  font-size: 1.5rem;
+  font-family: var(--fuente-principal);
+  font-weight: bold;
+  padding: 20px;
+  box-shadow: var(--sombra-principal);
+}
+
+.navbar-brand img {
+  width: var(--navbar-brand-width);
+  height: var(--navbar-brand-height);
+  border-radius: 5%;
+}
+
+.navbar-nav .nav-link {
+  color: var(--color-texto) !important;
+  font-family: var(--fuente-principal);
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-hover) !important;
+  font-weight: bold;
+}
+
+/* ==========================
+   🖼️ Secciones de contenido
+   ========================== */
+.caja-Historia,
+.caja-Quienes-Somos,
+.card-body,
+.caja-footer {
+  font-family: var(--fuente-principal);
+  font-size: var(--parrafo);
+}
+
+.tituloPrincipal {
+  font-family: var(--fuente-principal);
+  font-size: var(--titulo-principal);
+  font-weight: bold;
+  transition: color 0.3s ease;
+  color: black;
+  /* border-bottom: 2px solid black; */
+}
+
+.tituloPrincipal:hover {
+  color: var(--color-texto-hover);
+  border-bottom: 2px solid var(--color-texto-hover);
+}
+
+.caja-Quienes-Somos {
+  margin-top: 50px;
+}
+
+.caja-Quienes-Somos img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.caja-Valores {
+  background-color: rgba(211, 202, 202, 0.043);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.card-body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-body:hover,
+.card-body p:hover {
+  /* background-color: #098598; */
+  color: #111010;
+  border-radius: 20%;
+}
+
+/* ==========================
+   📜 Footer
+   ========================== */
+footer,
+#footer {
+  background-color: var(--color-footer);
+  color: var(--color-footer-text);
+  font-family: var(--fuente-principal);
+}
+
+footer {
+  font-size: var(--parrafo);
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.caja-footer {
+  background-color: #0b0b0bcf;
+  padding: 20px;
+  text-align: center;
+  border-radius: 1rem;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px var(--color-box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #000000;
+}
+
+#footer .caja-footer {
+  padding: 20px 0;
+}
+
+#footer h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#footer ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+#footer p,
+#footer .d-flex.align-items-center.gap-2 p {
+  font-size: 1rem;
+}
+
+#footer .rounded-circle {
+  width: 40px;
+  height: 40px;
+}
+
+/* ==========================
+   📱 Responsividad
+   ========================== */
+@media (max-width: 768px) {
+  #bannerCarrusel .carousel-caption {
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  #bannerCarrusel h1,
+  #bannerCarrusel p {
+    font-size: 1.2rem !important;
+  }
+
+  #bannerCarrusel h1 {
+    font-size: 1.5rem !important;
+  }
+
+  #bannerCarrusel .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /%3e%3c/svg%3e");
+  }
+
+  #footer .caja-footer {
+    padding: 0 10px;
+  }
+
+  #footer h5 {
+    font-size: 1.2rem;
+  }
+
+  #footer ul li {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  #footer p {
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  #footer .rounded-circle {
+    width: 35px;
+    height: 35px;
+  }
+
+  #footer .d-flex.align-items-center.gap-2 p {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+}
+
+/* ==========================
+   📌 Botones flotantes
+   ========================== */
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+}
+
+.boton-flotante a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-flotante i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .boton-flotante {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .boton-flotante a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .boton-flotante i {
+    font-size: 1.3rem;
+  }
+}
+
+/* ==========================
+   📌 Menú
+   ========================== */
+.cajaMenu {
+  margin-top: 10px;
+  background-color: var(--color-principal);
+  width: 100%;
+}
+
+.cajaMenu ul {
+  padding: 20px;
+}
+button {
+  background-color: var(--color-principal);
+  color: white;
+}
+
+button:hover {
+  background-color: var(--color-rosado-coral);
+}
+
+.caja-Historia {
+  /* background-color: var(--color-rosado-pastel); */
+  color: var(--color-texto);
+}
+
+.tituloPrincipal {
+  color: var(--color-rosado-viejo);
+}
+.img-producto {
+  max-width: 100%;
+  height: 400px; /* o el tamaño que quieras */
+  object-fit: cover; /* recorta manteniendo proporción */
+}

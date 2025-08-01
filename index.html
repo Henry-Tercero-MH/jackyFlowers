@@ -2,1014 +2,539 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jacky Flores y Detalles</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacky Flores</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <!-- Botón para abrir el menú lateral -->
-  <button class="btn btn-success position-fixed top-50 start-0 ms-2" data-bs-toggle="offcanvas"
-    data-bs-target="#menuLateral" bg-red>
-    ❤️
-  </button>
-  <!-- Menú lateral -->
-  <div class="offcanvas offcanvas-start text-bg-rose" tabindex="-1" id="menuLateral">
-    <div class="offcanvas-header">
-      <h6 class="offcanvas-title text-white"><i class="fas fa-seedling"></i> Menú de Opciones</h6>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    <!-- Contenedor flotante -->
+    <div class="boton-flotante d-flex flex-column gap-2">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/50249200595" target="_blank" class="btn btn-success rounded-circle shadow">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/1FTb4meVci/?mibextid=wwXIfr" target="_blank"
+            class="btn btn-primary rounded-circle shadow">
+            <i class="bi bi-facebook"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/arriolajackelline?igsh=aHpnNmVldnB5aWpn&utm_source=qr" target="_blank"
+            class="btn btn-danger rounded-circle shadow">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <!-- LinkedIn
+        <a href="" target="_blank" class="btn btn-primary rounded-circle shadow">
+            <i class="bi bi-linkedin"></i>
+        </a> -->
+
     </div>
-    <div class="offcanvas-body">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item bg-transparent border-0">
-          <a href="test-regalo.html" class="text-decoration-none text-white d-flex align-items-center">
-            <i class="fas fa-gift me-2"></i> Test: Descubre el Regalo Perfecto
-          </a>
-        </li>
-        <li class="list-group-item bg-transparent border-0">
-          <a href="crear-tarjeta.html" class="text-decoration-none text-white d-flex align-items-center">
-            <i class="fas fa-heart me-2"></i> Crea tu Tarjeta Especial
-          </a>
-        </li>
-        <li class="list-group-item bg-transparent border-0">
-          <a href="fechas-regalo.html" class="text-decoration-none text-white d-flex align-items-center">
-            <i class="fas fa-calendar-alt me-2"></i> Fechas Ideales para Regalar
-          </a>
-        </li>
-        <li class="list-group-item bg-transparent border-0">
-          <a href="declara.html" class="text-decoration-none text-white d-flex align-items-center">
-            <i class="fas fa-calendar-alt me-2"></i> Declara tu Amor
-          </a>
-        </li>
-      </ul>
+
+    <!-- Contenedor de la página -->
+    <div id="navbar-container"></div>
+    <div id="banner-container"></div>
+    <div id="bienvenidos"></div>
+    <br><br><br>
     </div>
-  </div>
+    <div class="container  mt-5" id="bienvenidos-container">
+        <h1 class="text-center mb-4 tituloPrincipal">Jacky</h1>
 
-  <!-- Enlace a FontAwesome para los íconos -->
-  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+        <div class="row align-items-center">
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1603830187457-a7fecda877bc?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded shadow" alt="Nuestra Iglesia">
+            </div>
 
+            <!-- Texto -->
+            <div class="col-md-6 caja-Historia">
+                <h2 class="text-center">Nuestra Historia</h2>
+                <div class="texto">
+                    <p>
+                        Jacky es una chica apasionada en lo que hace. Fue capaz de emprender con valentía su propio
+                        negocio, inspirado en su
+                        amor por la naturaleza y las flores. Desde pequeña, quedó maravillada por la belleza de los
+                        jardines de su abuela,
+                        donde cada flor parecía contar una historia.
+                    </p>
+                    <p>
+                        Con esfuerzo y dedicación, transformó su pasión en una marca reconocida por la calidad y el
+                        detalle en cada ramo.
+                        Cada arreglo floral que crea es más que un simple conjunto de flores: es una obra de arte llena
+                        de emociones,
+                        diseñada para transmitir amor, alegría y gratitud.
+                    </p>
+                    <p>
+                        Hoy, su negocio florece con el mismo espíritu con el que comenzó: con amor, creatividad y el
+                        deseo de hacer del
+                        mundo un lugar más bello, una flor a la vez. 💐✨
+                    </p>
 
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <br><br>
 
-  <!-- Header Flotante -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
-    <div class="container">
-      <a class="navbar-brand" href="#">🌸 Jacky Flores y Detalles</a>
+        </div>
+        <!-- Segunda Sección (Texto - Imagen Invertida) -->
+        <div>
+            <div class="row align-items-center mt-5 flex-md-row-reverse">
+                <h1 id="bienvenidos" class="text-center mb-4 tituloPrincipal">Quiénes Somos</h1>
+                <!-- Imagen -->
+                <div class="col-md-6 ">
+                    <img src="https://images.unsplash.com/photo-1650116940423-71408a413b98?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="img-fluid rounded shadow" alt="Comunidad de la Iglesia">
+                </div>
+                <!-- Texto -->
+                <div class="col-md-6 caja-Quienes-Somos ">
+                    <h2 class="text-center">Misión</h2>
+                    <div class="texto">
+                        <p>
+                            Crear experiencias significativas a través de arreglos florales diseñados con amor,
+                            creatividad y detalle.
+                            Cada ramo es una obra de arte que transmite emociones auténticas, celebra momentos
+                            especiales y embellece
+                            la vida de nuestros clientes, una flor a la vez.
+                        </p>
+                        <h2 class="text-center">Visión</h2>
+                        <p>
+                            Ser reconocidos como una marca líder en diseño floral artesanal, inspirando a las personas a
+                            expresar
+                            sentimientos profundos mediante la belleza de la naturaleza.
+                        </p>
+                        <p>
+                            Queremos florecer junto a nuestra comunidad, llevando alegría, gratitud y un toque de magia
+                            floral a
+                            cada espacio y ocasión, trascendiendo modas y creando recuerdos que perduren en el corazón.
+                        </p>
+                        <p>
+                            Convertirnos en una marca referente en arreglos florales artesanales, inspirando a las
+                            personas a compartir sentimientos
+                            a través de flores únicas y hermosas, y crecer junto a nuestra comunidad, llevando alegría y
+                            belleza a cada lugar.
+                        </p>
+                    </div>
+                </div>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="significados.html">Significados</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </div>
 
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- Banner con Diseño Botánico -->
-  <header class="banner">
-    <div class="container text-center text-white">
-      <h1 class="display-4">La Belleza de la Naturaleza</h1>
-      <p class="lead">Flores que hablan el lenguaje del Amor</p>
-    </div>
-  </header>
-
-
-  <div class="container mt-5">
-    <section id="home" class="text-center">
-      <h2 class="section-title">🌿 Bienvenidos</h2>
-      <p class="section-text">Explora nuestra colección de flores y arreglos únicos.</p>
-      <!-- Filtro -->
-      <div class="container my-4">
-        <div class="container mt-3">
-          <h5 class="mb-2">Palabras clave:</h5>
-          <span class="badge bg-primary">Tulipanes</span>
-          <span class="badge bg-secondary">Naturales</span>
-
-          <span class="badge bg-success">Girasoles</span>
-          <span class="badge bg-danger">Rosas Eternas</span>
-          <span class="badge bg-warning text-dark">Chocolates</span>
-          <span class="badge bg-info text-dark">Graduación</span>
-          <span class="badge bg-danger">Gerberas</span>
-          <span class="badge bg-dark">Peluche</span>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <input type="text" id="filtro" class="form-control" placeholder="Buscar ramo...">
+    </div>
+    <!-- Sección de Valores con íconos -->
+    <div class="container mt-5 caja-Valores" id="valores-container">
+        <h2 class="text-center mb-4 tituloPrincipal">Nuestros Valores</h2>
+
+        <div class="row g-4">
+            <!-- Frescura -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-flower1 text-primary me-2"></i>
+                            Frescura
+                        </h5>
+                        <p class="card-text">
+                            Trabajamos únicamente con flores frescas y de la más alta calidad, seleccionadas
+                            cuidadosamente para garantizar que cada arreglo mantenga su belleza y vitalidad
+                            por más tiempo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creatividad -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-palette-fill text-success me-2"></i>
+                            Creatividad
+                        </h5>
+                        <p class="card-text">
+                            Cada arreglo floral es una obra de arte única. Combinamos colores, texturas y fragancias
+                            para crear diseños personalizados que expresen perfectamente tus sentimientos y emociones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pasión -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-heart-fill text-danger me-2"></i>
+                            Pasión
+                        </h5>
+                        <p class="card-text">
+                            Nuestro amor por las flores se refleja en cada detalle. Ponemos el corazón en cada
+                            creación, transmitiendo emociones auténticas a través de la belleza natural de las flores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atención Personalizada -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-chat-heart-fill text-warning me-2"></i>
+                            Atención Personalizada
+                        </h5>
+                        <p class="card-text">
+                            Escuchamos tus necesidades y preferencias para crear el arreglo perfecto. Cada cliente
+                            es especial y merece una atención dedicada y un servicio excepcional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Sección: Encuentra el Outfit Perfecto -->
+    <section class="container mt-5">
+
+        <h2 class="text-center mb-4 tituloPrincipal">Encuentra un Ramo perfecto para Cada Ocasión</h2>
+        <div class="row g-4">
+
+            <!-- Para toda ocacion  -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="./assets/img/rosas/r12girasoles24rosasRojasChocolatesYglobo.jpg" class="card-img-top"
+                        alt="ramos natuales">
+                    <div class="card-body">
+                        <h5 class="card-title">Ramos Para toda ocación</h5>
+                        <p class="card-text text-secondary">
+                            Dedicate este ramo a esa persona especial, ya sea para un cumpleaños, aniversario o
+                            simplemente
+                            para alegrar su día. Cada flor cuenta una historia de amor y gratitud, perfecta para
+                            expresar tus sentimientos más profundos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flores de temporada-->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="./assets/img/rosas/r9gerberaschocolatesytarjeta.jpg" class="card-img-top"
+                        alt="Gerberas y chocolates">
+                    <div class="card-body">
+                        <h5 class="card-title">Gerberas y Chocolates</h5>
+                        <p class="card-text text-secondary">
+                            La combinación de gerberas vibrantes y chocolates finos es un regalo perfecto para
+                            cualquier ocasión. Este arreglo transmite alegría y dulzura, ideal para sorprender a
+                            esa persona especial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- personaliza tus ramos -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="./assets/img/rosas/rEramos20rosasCoronaMetalChocolates.jpg" class="card-img-top"
+                        alt="Ramos personalizados">
+                    <div class="card-body">
+                        <h5 class="card-title">Ramos Personalizados</h5>
+                        <p class="card-text text-secondary">
+                            Nos aseguramos de entregarte tus ramos a tiempo, con calidad excepcional y un diseño
+                            único que se adapta a ti. Tu satisfacción es nuestra prioridad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="catalogo-container">
+        <br><br>
+    </div>
+    <div class="container mt-5" id="catalogo-container">
+
+        <h2 class="text-center mb-4 tituloPrincipal">Explora Nuestra Variedad en Diseños</h2>
+        <p class="text-center text-muted mb-4">Encuentra el ramo perfecto para cada ocasión.</p>
+
+        <!-- Filtro y buscador -->
+        <div class="row mb-4 justify-content-center">
+            <div class="col-md-6 mb-2">
+                <input type="text" id="buscador" class="form-control" placeholder="Buscar por nombre o descripción...">
+            </div>
+            <div class="col-12 col-md-8 text-center my-3">
+                <div class="btn-group d-flex flex-wrap" role="group" aria-label="Categorías">
+                    <button type="button" class="btn btn-outline-secondary flex-fill active"
+                        data-categoria="todos">Todos</button>
+                    <button type="button" class="btn btn-outline-secondary flex-fill"
+                        data-categoria="rosas">Rosas</button>
+                    <button type="button" class="btn btn-outline-secondary flex-fill"
+                        data-categoria="gerberas">Gerberas</button>
+                    <button type="button" class="btn btn-outline-secondary flex-fill"
+                        data-categoria="tulipanes">Tulipanes</button>
+                    <button type="button" class="btn btn-outline-secondary flex-fill"
+                        data-categoria="canastas">Canastas</button>
+                    <button type="button" class="btn btn-outline-secondary flex-fill"
+                        data-categoria="peluches">Peluches</button>
+                    <button type="button" class="btn btn-outline-secondary flex-fill"
+                        data-categoria="gomitas">Gomitas</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-4" id="catalogo">
+            <!-- Tarjetas generadas dinámicamente -->
+        </div>
+    </div>
+
+    <script>
+        // Array de productos con categoría
+
+        const productos = [
+            {
+                titulo: "Ramo de 12 Rosas y 1 Girasol",
+                descripcion: "Combina la elegancia de 12 rosas con la alegría de un girasol.",
+                imagen: "./assets/img/assets/12rosas1girasol.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "rosas-girasoles"
+            },
+            {
+                titulo: "Arreglo Corazón con 36 Rosas y Chocolates Ferrero Rocher",
+                descripcion: "Hermoso corazón de rosas con deliciosos chocolates.",
+                imagen: "./assets/img/assets/arregloCorazon36rosasChocolatesFerreroRocher.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "rosas"
+            },
+            {
+                titulo: "Arreglo Floral 24 Rosas, Girasol, Clavel y Chocolates",
+                descripcion: "Arreglo mixto lleno de color y dulzura.",
+                imagen: "./assets/img/assets/ArregloFloral24rosasGirasolClavelYChocolates.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "mixtos"
+            },
+            {
+                titulo: "Arreglo Rosas, Oso de Peluche, Galletas y Globo",
+                descripcion: "Un detalle tierno para un regalo inolvidable.",
+                imagen: "./assets/img/assets/arregloRosasOsodePelucheGalletasYglobo.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "peluches"
+            },
+            {
+                titulo: "Canasta Rosas Eternas y Chocolates",
+                descripcion: "Un regalo que perdura: rosas eternas y chocolates.",
+                imagen: "./assets/img/assets/canastaRosasEternasYchocolates.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "canastas"
+            },
+            {
+                titulo: "Canasta Rosas Eternas y Chocolates 2",
+                descripcion: "Variante de canasta con rosas preservadas.",
+                imagen: "./assets/img/assets/canastaRosasEternasYchocolates2.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "canastas"
+            },
+            {
+                titulo: "Canasta Rosas Eternas y Chocolates 3",
+                descripcion: "Otra opción delicada de rosas eternas.",
+                imagen: "./assets/img/assets/canastaRosasEternasYchocolates3.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "canastas"
+            },
+            {
+                titulo: "Gardenias Rosadas",
+                descripcion: "Gardenias frescas que transmiten pureza y ternura.",
+                imagen: "./assets/img/assets/gardeniasRosadas.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "gardenias"
+            },
+            {
+                titulo: "Ramo 10 Gerberas, 24 Rosas y Chocolates",
+                descripcion: "Gerberas y rosas para una sorpresa alegre.",
+                imagen: "./assets/img/assets/r10gerberas24rosasychocolates.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "gerberas"
+            },
+            {
+                titulo: "Ramo 11 Gerberas, 24 Rosas, 12 Chocolates Ferrero Rocher",
+                descripcion: "Vibrante y delicioso: flores y chocolates premium.",
+                imagen: "./assets/img/assets/r11gerberas24rosas12chocolatesrerrerorocher.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "gerberas"
+            },
+            {
+                titulo: "Ramo 12 Gerberas, Clavel y Eucalipto",
+                descripcion: "Ramo fresco con aroma natural.",
+                imagen: "./assets/img/assets/r12gerberasClavelEucalipto.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "gerberas"
+            },
+            {
+                titulo: "Ramo 12 Girasoles, 24 Rosas Rojas, Chocolates y Globo",
+                descripcion: "Un ramo impactante para celebraciones especiales.",
+                imagen: "./assets/img/assets/r12girasoles24rosasRojasChocolatesYglobo.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "girasoles"
+            },
+            {
+                titulo: "Ramo 12 Rosas Rosadas, Lirios y Eucaliptos",
+                descripcion: "Romántico y elegante.",
+                imagen: "./assets/img/assets/r12rosasRosadasLiriosYeucaliptos.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "rosas"
+            },
+            {
+                titulo: "Ramo 18 Rosas Rojas y 15 Chocolates Ferrero Rocher",
+                descripcion: "Clásico para enamorar.",
+                imagen: "./assets/img/assets/r18rosasRojas15chocolatesFerreroRocher.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "rosas"
+            },
+            {
+                titulo: "Ramo 24 Gerberas, Lloviznas y Solidago",
+                descripcion: "Un toque silvestre y lleno de color.",
+                imagen: "./assets/img/assets/r24gerberasLloviznasYsolidalgo.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "gerberas"
+            },
+            {
+                titulo: "Ramo 24 Rosas, 6 Girasoles, Chocolates y Globo Personalizado",
+                descripcion: "Perfecto para cumpleaños o aniversarios.",
+                imagen: "./assets/img/assets/r24rosas6girasolesChocolatesYGloboPersonalizado.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "mixtos"
+            },
+            {
+                titulo: "Ramo 24 Rosas Blancas y Rosadas, Clavel y Eucalipto",
+                descripcion: "Ramo suave y elegante.",
+                imagen: "./assets/img/assets/r24rosasBlancasYrosadasClavelYeucalipto.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "rosas"
+            },
+            {
+                titulo: "Ramo de 30 Tulipanes",
+                descripcion: "Tulipanes frescos, un detalle sofisticado.",
+                imagen: "./assets/img/assets/r30tulipanes.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "tulipanes"
+            },
+            {
+                titulo: "Ramo 36 Rosas Rojas, 12 Girasoles y 24 Chocolates Ferrero Rocher",
+                descripcion: "Ideal para una declaración de amor inolvidable.",
+                imagen: "./assets/img/assets/r36rosasRojas12Girasoles24chocolatesFerreroRocher.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "rosas-girasoles"
+            },
+            {
+                titulo: "Ramo de Gomitas",
+                descripcion: "Original y divertido para endulzar.",
+                imagen: "./assets/img/assets/ramodegomitas.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "gomitas"
+            },
+            {
+                titulo: "Caja con Tulipanes",
+                descripcion: "Tulipanes elegantes en caja decorativa.",
+                imagen: "./assets/img/assets/rECajacontulipanes.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "tulipanes"
+            },
+            {
+                titulo: "Caja con Tulipanes 2",
+                descripcion: "Variante con tulipanes en elegante presentación.",
+                imagen: "./assets/img/assets/rECajacontulipanes2.jpg",
+                enlace: "https://wa.me/50249200595",
+                categoria: "tulipanes"
+            }
+            // Puedes seguir agregando el resto siguiendo este mismo patrón.
+        ];
+
+        const catalogo = document.getElementById("catalogo");
+        const buscador = document.getElementById("buscador");
+        const botonesCategoria = document.querySelectorAll("[data-categoria]");
+
+        // Renderiza productos filtrados
+        function renderProductos(filtroTexto = "", filtroCategoria = "todos") {
+            catalogo.innerHTML = "";
+
+            const filtrados = productos.filter(producto => {
+                const coincideTexto = producto.titulo.toLowerCase().includes(filtroTexto) ||
+                    producto.descripcion.toLowerCase().includes(filtroTexto);
+                const coincideCategoria = filtroCategoria === "todos" || producto.categoria === filtroCategoria;
+                return coincideTexto && coincideCategoria;
+            });
+
+            if (filtrados.length === 0) {
+                catalogo.innerHTML = "<p class='text-center text-muted'>No se encontraron productos.</p>";
+            }
+
+            filtrados.forEach(producto => {
+                const tarjeta = `
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-lg rounded-4">
+            <img src="${producto.imagen}" class="card-img-top rounded-top-4 img-producto" alt="${producto.titulo}">
+            <div class="card-body bg-light">
+              <h5 class="card-title fw-semibold text-dark">${producto.titulo}</h5>
+              <p class="card-text text-secondary">${producto.descripcion}</p>
+              <p class="text-muted fw-semibold">Precio: ${producto.precio}</p>
+
+              <a href="${producto.enlace}" class="btn btn-outline-dark 
+
+              rounded-pill px-4">Ver más</a>
+            </div>
+            
           </div>
-        </div>
-      </div>
-
-    </section>
-
-    <script>
-      const filtro = document.getElementById("filtro");
-
-      filtro.addEventListener("input", () => {
-        const texto = filtro.value.toLowerCase();
-
-        const ramosFiltrados = ramos.filter(ramo =>
-          ramo.titulo.toLowerCase().includes(texto) ||
-          ramo.descripcion.toLowerCase().includes(texto) ||
-          (ramo.categoria && ramo.categoria.toLowerCase().includes(texto))
-        );
-
-        renderRamos(ramosFiltrados);
-      });
-    </script>
-
-    <!-- Sección de Ramos de Flores -->
-    <section id="ramos" class="container py-5">
-      <h2 class="text-center section-title">💐 Nuestros Ramos Especiales</h2>
-      <p class="text-center section-text">Elige el ramo perfecto para cada ocasión.</p>
-
-      <div class="row" id="ramos-container">
-        <!-- Las tarjetas se generarán aquí con JavaScript -->
-      </div>
-    </section>
-
-    <script>
-      const ramos = [
-        {
-          titulo: "Ramo de Rosas Blancas y Rosadas",
-          descripcion: "Simboliza pureza e inocencia, ideal para bodas y nuevos comienzos.",
-          imagen: "assets/rosas.jpg",
-          alt: "Ramo de Rosas Blancas y Rosadas",
-          categoria: "rosas, ramos naturales"
-
-        },
-        {
-          titulo: "Ramo de Gerberas",
-          descripcion: "Representa alegría y luz, perfecto para celebrar momentos especiales.",
-          imagen: "assets/gardeniasRosadas.jpg",
-          alt: "Ramo de Gardenias"
-          ,
-          categoria: "gerberas, ramos naturales"
-        },
-        {
-          titulo: "Ramo de Rosas Rojas",
-          descripcion: "Expresa amor y pasión intensa, ideal para aniversarios y declaraciones de amor.",
-          imagen: "assets/rosasRojas.jpg",
-          alt: "Ramo de Rosas Rojas"
-          ,
-          categoria: "rosas, ramos naturales"
-        },
-        {
-          titulo: "Ramo de 36 Rosas Rojas con Baby y Chocolates",
-          descripcion: "Un elegante detalle de amor con rosas, chocolates y un toque especial.",
-          imagen: "assets/ramo36rosasRojasBabyChocolates.jpg",
-          alt: "Ramo de 36 Rosas Rojas con Baby y Chocolates"
-          ,
-          categoria: "rosas, ramos naturales,chocolates"
-        },
-        {
-          titulo: "Ramo de 10 Gerberas, 24 Rosas y Chocolates",
-          descripcion: "Una combinación perfecta de colores y dulzura para sorprender.",
-          imagen: "assets/r10gerberas24rosasychocolates.jpg",
-          alt: "Ramo de 10 Gerberas, 24 Rosas y Chocolates"
-          ,
-          categoria: "gerberas, ramos naturales,chocolates,gerberas,rosas"
-        },
-        {
-          titulo: "Ramo de 11 Gerberas, 24 Rosas y 12 Chocolates Ferrero Rocher",
-          descripcion: "Ideal para demostrar afecto con un toque dulce y colorido.",
-          imagen: "assets/r11gerberas24rosas12chocolatesrerrerorocher.jpg",
-          alt: "Ramo de 11 Gerberas, 24 Rosas y 12 Chocolates Ferrero Rocher"
-          ,
-          categoria: "rosas, ramos naturales,gerberas,chocolates"
-        },
-        {
-          titulo: "Ramo de 9 Gerberas, Chocolates y Tarjeta",
-          descripcion: "Un hermoso detalle con flores, dulces y un mensaje especial.",
-          imagen: "assets/r9gerberaschocolatesytarjeta.jpg",
-          alt: "Ramo de 9 Gerberas, Chocolates y Tarjeta"
-          ,
-          categoria: "gerberas, ramos naturales,chocolate"
-        },
-        {
-          titulo: "Ramo de 12 Rosas y 1 Girasol",
-          descripcion: "Una combinación vibrante de rosas y girasoles para alegrar el día.",
-          imagen: "assets/r12rosas1girasol.jpg",
-          alt: "Ramo de 12 Rosas y 1 Girasol"
-          ,
-          categoria: "rosas, ramos naturales,girasol"
-        },
-        {
-          titulo: "Ramo de 24 Rosas Rojas, Solidago y Coronas Metal",
-          descripcion: "Un arreglo sofisticado con un toque metálico y flores vibrantes.",
-          imagen: "assets/r24rosasrojasSolidagoyCoronasMetal.jpg",
-          alt: "Ramo de 24 Rosas Rojas, Solidago y Coronas Metal"
-          ,
-          categoria: "rosas, ramos naturales,solidalgo"
-        },
-        {
-          titulo: "Ramo de 12 Gerberas, Clavel y Eucalipto",
-          descripcion: "Una mezcla fresca y delicada con flores aromáticas.",
-          imagen: "assets/r12gerberasClavelEucalipto.jpg",
-          alt: "Ramo de 12 Gerberas, Clavel y Eucalipto"
-          ,
-          categoria: "gerberas, ramos naturales,clavel,eucalipto"
-        },
-        {
-          titulo: "Ramo de 24 Rosas Rosas y Chocolates",
-          descripcion: "Un elegante detalle de rosas con un dulce acompañamiento.",
-          imagen: "assets/r24rosasRosasChocolates.jpg",
-          alt: "Ramo de 24 Rosas Rosas y Chocolates"
-          ,
-          categoria: "rosas, ramos naturales,chocolates"
-        },
-        {
-          titulo: "Ramo de 24 Rosas Blancas y Rosadas, Clavel y Eucalipto",
-          descripcion: "Una combinación romántica y elegante para toda ocasión.",
-          imagen: "assets/r24rosasBlancasYrosadasClavelYeucalipto.jpg",
-          alt: "Ramo de 24 Rosas Blancas y Rosadas, Clavel y Eucalipto",
-          categoria: "rosas, ramos naturales,clavel,eucalipto"
-        },
-        {
-          titulo: "Ramo de 12 Rosas, 1 Girasol y 1 Birrete de Graduación Personalizado",
-          descripcion: "Un regalo perfecto para celebrar logros y nuevos comienzos.",
-          imagen: "assets/r12rosas1girasol1birreteGraduacionPersonalizado.jpg",
-          alt: "Ramo de 12 Rosas, 1 Girasol y 1 Birrete de Graduación Personalizado"
-          ,
-          categoria: "rosas, ramos naturales,graduacion"
-        },
-        {
-          titulo: "Ramo de 12 Rosas Rosadas, Lirios y Eucaliptos",
-          descripcion: "Un detalle floral elegante con un aroma encantador.",
-          imagen: "assets/r12rosasRosadasLiriosYeucaliptos.jpg",
-          alt: "Ramo de 12 Rosas Rosadas, Lirios y Eucaliptos",
-          categoria: "rosas, ramos naturales,lirios"
-        },
-        {
-          titulo: "Ramo de 12 Girasoles, 24 Rosas Rojas, Chocolates y Globo",
-          descripcion: "Una expresión de alegría, amor y dulzura en un solo arreglo.",
-          imagen: "assets/r12girasoles24rosasRojasChocolatesYglobo.jpg",
-          alt: "Ramo de 12 Girasoles, 24 Rosas Rojas, Chocolates y Globo"
-          ,
-          categoria: "rosas, ramos naturales,girasoles,chocolates,globo"
-        },
-        {
-          titulo: "Ramo de Fresas, Chocolates Ferrero Rocher y Baby",
-          descripcion: "Un detalle único que combina frescura y dulzura.",
-          imagen: "assets/rFresasChocolatesFerreroRocherYbaby.jpg",
-          alt: "Ramo de Fresas, Chocolates Ferrero Rocher y Baby"
-          ,
-          categoria: "fresas, ramos naturales,chocolates"
-        },
-        {
-          titulo: "Arreglo Floral de 24 Rosas, Girasol, Clavel y Chocolates",
-          descripcion: "Una combinación perfecta de colores y dulces.",
-          imagen: "assets/ArregloFloral24rosasGirasolClavelYChocolates.jpg",
-          alt: "Arreglo Floral de 24 Rosas, Girasol, Clavel y Chocolates"
-          ,
-          categoria: "rosas, ramos naturales,girasol,chocolates"
-        },
-        {
-          titulo: "Arreglo de Rosas, Oso de Peluche, Galletas y Globo",
-          descripcion: "Un regalo tierno y delicioso para sorprender.",
-          imagen: "assets/arregloRosasOsodePelucheGalletasYglobo.jpg",
-          alt: "Arreglo de Rosas, Oso de Peluche, Galletas y Globo"
-          ,
-          categoria: "rosas, ramos naturales,peluches,galletas,globo"
-        },
-        {
-          titulo: "Ramo de 36 Rosas Rojas, 12 Girasoles y 24 Chocolates Ferrero Rocher",
-          descripcion: "Un impresionante detalle floral con un toque dulce.",
-          imagen: "assets/r36rosasRojas12Girasoles24chocolatesFerreroRocher.jpg",
-          alt: "Ramo de 36 Rosas Rojas, 12 Girasoles y 24 Chocolates Ferrero Rocher"
-          ,
-          categoria: "rosas, ramos naturales,girasoles,chocolates"
-        },
-        {
-          titulo: "Arreglo en forma de Corazón con 36 Rosas y Chocolates Ferrero Rocher",
-          descripcion: "Una declaración de amor en un elegante diseño de corazón.",
-          imagen: "assets/arregloCorazon36rosasChocolatesFerreroRocher.jpg",
-          alt: "Arreglo en forma de Corazón con 36 Rosas y Chocolates Ferrero Rocher"
-          ,
-          categoria: "rosas, ramos naturales,chocolates"
-        },
-        {
-          titulo: "Ramo de 9 Girasoles, 12 Rosas y Chocolates",
-          descripcion: "Un regalo lleno de luz, amor y dulzura.",
-          imagen: "assets/r9girasoles12rosasYchocolates.jpg",
-          alt: "Ramo de 9 Girasoles, 12 Rosas y Chocolates"
-          ,
-          categoria: "rosas, ramos naturales,girasoles,chocolates"
-        },
-        {
-          titulo: "Ramo de 5 Tulipanes",
-          descripcion: "Un delicado y elegante detalle floral.",
-          imagen: "assets/r5tulipanes.jpg",
-          alt: "Ramo de 5 Tulipanes"
-          ,
-          categoria: "tulipanes, ramos naturales"
-        },
-        {
-          titulo: "Ramo de 18 Rosas Rojas y 15 Chocolates Ferrero Rocher",
-          descripcion: "Una combinación romántica y deliciosa.",
-          imagen: "assets/r18rosasRojas15chocolatesFerreroRocher.jpg",
-          alt: "Ramo de 18 Rosas Rojas y 15 Chocolates Ferrero Rocher"
-          ,
-          categoria: "rosas, ramos naturales,chocolates"
-        },
-        {
-          titulo: "Ramo de 24 Gerberas, Lloviznas y Solidago",
-          descripcion: "Un arreglo vibrante con un toque silvestre.",
-          imagen: "assets/r24gerberasLloviznasYsolidalgo.jpg",
-          alt: "Ramo de 24 Gerberas, Lloviznas y Solidago"
-          ,
-          categoria: "gerberas, ramos naturales"
-        },
-        {
-          titulo: "Ramo de 24 Rosas Rojas, Baby, Oso de Peluche, 3 Globos y Chocolates Ferrero Rocher",
-          descripcion: "Un hermoso regalo con flores, ternura y dulzura.",
-          imagen: "assets/r24rosasRojasBabyOsodePeluche3globosYchocolatesFerreroRocher.jpg",
-          alt: "Ramo de 24 Rosas Rojas, Baby, Oso de Peluche, 3 Globos y Chocolates Ferrero Rocher"
-        },
-        {
-          titulo: "Hermoso Ramo de 30 Tulipanes",
-          descripcion: "Un regalo lleno de vida y color, perfecto para expresar los sentimientos más sinceros.",
-          imagen: "assets/r30tulipanes.jpg",
-          alt: "Ramo de 30 Tulipanes"
-          ,
-          categoria: "tulipanes, ramos naturales"
-        },
-        {
-          titulo: "Ramo de 12 Rosas y 1 Girasol con Chocolates y Solidago",
-          descripcion: "Una combinación encantadora de rosas y girasol, acompañada de chocolates para un detalle especial.",
-          imagen: "assets/r12rosas1girasolChocolatesYsolidalgo.jpg",
-          alt: "Ramo de 12 Rosas y 1 Girasol con Chocolates y Solidago"
-          ,
-          categoria: "rosas, ramos naturales,girasol,chocolates"
-        },
-        {
-          titulo: "Ramo de 12 Rosas con Solidago y Tarjeta",
-          descripcion: "Un hermoso ramo de rosas con solidago, ideal para expresar sentimientos con un toque especial.",
-          imagen: "assets/r12rosasSolidalgoYtarjeta.jpg",
-          alt: "Ramo de 12 Rosas con Solidago y Tarjeta"
-          ,
-          categoria: "rosas, ramos naturales"
-        },
-        {
-          titulo: "Ramo de 24 Rosas y 6 Girasoles con Chocolates y Globo Personalizado",
-          descripcion: "Una combinación perfecta de elegancia y alegría, acompañada de chocolates y un globo especial.",
-          imagen: "assets/r24rosas6girasolesChocolatesYGloboPersonalizado.jpg",
-          alt: "Ramo de 24 Rosas y 6 Girasoles con Chocolates y Globo Personalizado"
-          ,
-          categoria: "rosas, ramos naturales,girasoles"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas",
-          "descripcion": "Un hermoso ramo de 7 rosas, perfecto para expresar amor y admiración.",
-          "imagen": "assets/rEramos7rosas.jpg",
-          "alt": "Ramo de 7 rosas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas - Variante 2",
-          "descripcion": "Un elegante ramo de 7 rosas en una presentación especial.",
-          "imagen": "assets/rEramos7rosas2.jpg",
-          "alt": "Ramo de 7 rosas variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas- Variante 3",
-          "descripcion": "Un delicado ramo de 7 rosas con un toque romántico.",
-          "imagen": "assets/rEramos7rosas3.jpg",
-          "alt": "Ramo de 7 rosas variante 3"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas - Variante 4",
-          "descripcion": "Un hermoso ramo de 7 rosas, ideal para cualquier ocasión.",
-          "imagen": "assets/rEramos7rosas4.jpg",
-          "alt": "Ramo de 7 rosas variante 4"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas y Mariposas",
-          "descripcion": "Un ramo encantador de 20 rosas decorado con mariposas.",
-          "imagen": "assets/rEramos20rosasYmariposas.jpg",
-          "alt": "Ramo de 20 rosas y mariposas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas",
-          "descripcion": "Un bouquet elegante de 20 rosas frescas.",
-          "imagen": "assets/rEramos20rosas.jpg",
-          "alt": "Ramo de 20 rosas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas y Corona de Metal",
-          "descripcion": "Un lujoso ramo de 20 rosas adornado con una corona de metal.",
-          "imagen": "assets/rEramos20rosasYcoronaMetal.jpg",
-          "alt": "Ramo de 20 rosas con corona de metal"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas y Corona con Detalles Baby",
-          "descripcion": "Un tierno ramo de 20 rosas con detalles inspirados en bebés.",
-          "imagen": "assets/rEramos20rosasYcoronaYbaby.jpg",
-          "alt": "Ramo de 20 rosas con detalles baby"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas con Listón Personalizado y Chocolates",
-          "descripcion": "Un hermoso ramo de 10 rosas con listón personalizado y chocolates.",
-          "imagen": "assets/rEramos10rosasListonPersonalizadoYchocolates.jpg",
-          "alt": "Ramo de 10 rosas con listón personalizado y chocolates"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas Temática y Corona de Metal",
-          "descripcion": "Un ramo de 7 rosas decorado con una temática especial y una corona de metal.",
-          "imagen": "assets/rEramos7rosasTematicaYcoronaMetal.jpg",
-          "alt": "Ramo de 7 rosas con temática y corona de metal"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas",
-          "descripcion": "Un clásico ramo de 10 rosas para sorprender a alguien especial.",
-          "imagen": "assets/rEramos10rosas.jpg",
-          "alt": "Ramo de 10 rosas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Girasoles Eternos con Corona de Metal y Chocolates",
-          "descripcion": "Un radiante ramo de 7 girasoles con corona de metal y chocolates.",
-          "imagen": "assets/rEramos7girasolesCoronaMetalYchocolates.jpg",
-          "alt": "Ramo de 7 girasoles con corona de metal y chocolates"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 30 Rosas Eternas",
-          "descripcion": "Un espectacular ramo de 30 rosas ideal para grandes celebraciones.",
-          "imagen": "assets/rEramos30rosas.jpg",
-          "alt": "Ramo de 30 rosas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas Temática y Corona de Metal",
-          "descripcion": "Un hermoso ramo de 7 rosas con una temática especial y adornado con corona de metal.",
-          "imagen": "assets/rEramos7rosasTematicaCoronaMetal.jpg",
-          "alt": "Ramo de 7 rosas temática con corona de metal"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas Temática Aurora con Corona de Metal",
-          "descripcion": "Un encantador ramo de 7 rosas inspirado en Aurora, con una elegante corona de metal.",
-          "imagen": "assets/rEramos7rosasTematicaCoronaMetalAurora.jpg",
-          "alt": "Ramo de 7 rosas temática Aurora con corona de metal"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas Temática Aurora con Corona de Metal - Variante 2",
-          "descripcion": "Una versión especial del ramo inspirado en Aurora con una corona de metal.",
-          "imagen": "assets/rEramos7rosasTematicaCoronaMetalAurora2.jpg",
-          "alt": "Ramo de 7 rosas temática Aurora con corona de metal variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas Temática Campanita con Corona de Metal",
-          "descripcion": "Un hermoso ramo de 7 rosas inspirado en Campanita, con detalles mágicos y una corona de metal.",
-          "imagen": "assets/rEramos7rosasTematicaCoronaMetalCampanita.jpg",
-          "alt": "Ramo de 7 rosas temática Campanita con corona de metal"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas Temática Rapunzel con Corona de Metal",
-          "descripcion": "Un mágico ramo de 7 rosas inspirado en Rapunzel, con una hermosa corona de metal.",
-          "imagen": "assets/rEramos7rosasTematicaCoronaMetalrapunsel.jpg",
-          "alt": "Ramo de 7 rosas temática Rapunzel con corona de metal"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas Temática Rapunzel con Corona de Metal - Variante 2",
-          "descripcion": "Una versión especial del ramo inspirado en Rapunzel con detalles únicos y corona de metal.",
-          "imagen": "assets/rEramos7rosasTematicaCoronaMetalrapunsel2.jpg",
-          "alt": "Ramo de 7 rosas temática Rapunzel con corona de metal variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas con Corona de Metal y Chocolates",
-          "descripcion": "Un elegante ramo de 20 rosas con una distinguida corona de metal y deliciosos chocolates.",
-          "imagen": "assets/rEramos20rosasCoronaMetalChocolates.jpg",
-          "alt": "Ramo de 20 rosas con corona de metal y chocolates"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 15 Rosas Eternas con Luces LED y Chocolates",
-          "descripcion": "Un hermoso ramo de 15 rosas con luces LED y una selección de chocolates.",
-          "imagen": "assets/rEramos15rosasLucesLedChocolates.jpg",
-          "alt": "Ramo de 15 rosas con luces LED y chocolates"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 13 Rosas Eternas con Luces LED y Corona de Mariposas",
-          "descripcion": "Un delicado ramo de 13 rosas iluminado con luces LED y decorado con una corona de mariposas.",
-          "imagen": "assets/rEramos13rosasLucesLedCoronaMariposas.jpg",
-          "alt": "Ramo de 13 rosas con luces LED y corona de mariposas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas con Chocolates y Osito Stitch",
-          "descripcion": "Un tierno ramo de 20 rosas acompañado de chocolates y un adorable osito de Stitch.",
-          "imagen": "assets/rEramos20RosasChocolatesYositoStich.jpg",
-          "alt": "Ramo de 20 rosas con chocolates y osito Stitch"
-          ,
-          categoria: "rosas eternas,peluche"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas con Chocolates y Osito Stitch Rosado",
-          "descripcion": "Una versión especial del ramo de 20 rosas con chocolates y un osito Stitch rosado.",
-          "imagen": "assets/rEramos20RosasChocolatesYositoStichRosado.jpg",
-          "alt": "Ramo de 20 rosas con chocolates y osito Stitch rosado"
-          ,
-          categoria: "rosas eternas,peluche"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas con Corona de Metal y Listón de Cumpleaños",
-          "descripcion": "Un espectacular ramo de 20 rosas adornado con una corona de metal y un listón especial de cumpleaños.",
-          "imagen": "assets/rEramos20RosasCoronaMetalYlistonCumpleaños.jpg",
-          "alt": "Ramo de 20 rosas con corona de metal y listón de cumpleaños"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 8 Rosas Eternas y 1 Girasol con Birrete de Graduación",
-          "descripcion": "Un ramo especial de 8 rosas y 1 girasol con un birrete de graduación, perfecto para celebrar logros académicos.",
-          "imagen": "assets/rEramos8Rosas1girasolYbirretedeGraduacion.jpg",
-          "alt": "Ramo de 8 rosas y 1 girasol con birrete de graduación"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 8 Rosas Eternas y 1 Girasol con Birrete de Graduación - Variante 2",
-          "descripcion": "Una versión alternativa del ramo de 8 rosas y 1 girasol con birrete de graduación.",
-          "imagen": "assets/rEramos8Rosas1girasolYbirretedeGraduacion2.jpg",
-          "alt": "Ramo de 8 rosas y 1 girasol con birrete de graduación variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 8 Rosas Eternas y 1 Girasol con Birrete de Graduación - Variante 3",
-          "descripcion": "Otra presentación del ramo de 8 rosas y 1 girasol con birrete de graduación.",
-          "imagen": "assets/rEramos8Rosas1girasolYbirretedeGraduacion3.jpg",
-          "alt": "Ramo de 8 rosas y 1 girasol con birrete de graduación variante 3"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 8 Rosas Eternas y 1 Girasol con Birrete de Graduación - Variante 4",
-          "descripcion": "Una presentación adicional del ramo de 8 rosas y 1 girasol con birrete de graduación.",
-          "imagen": "assets/rEramos8Rosas1girasolYbirretedeGraduacion4.jpg",
-          "alt": "Ramo de 8 rosas y 1 girasol con birrete de graduación variante 4"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 8 Rosas Eternas con Hojas Temática Tinkerbell y Corona de Metal",
-          "descripcion": "Un ramo especial de 8 rosas con hojas inspirado en Tinkerbell y decorado con una corona de metal.",
-          "imagen": "assets/rEramos8rosasConHojasTematicaTinkerbellYcoronademetal.jpg",
-          "alt": "Ramo de 8 rosas con hojas temática Tinkerbell y corona de metal"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 8 Rosas Eternas con Hojas Temática Tinkerbell y Corona de Metal - Variante 2",
-          "descripcion": "Una versión alternativa del ramo de 8 rosas con hojas inspirado en Tinkerbell con corona de metal.",
-          "imagen": "assets/rEramos8rosasConHojasTematicaTinkerbellYcoronademetal2.jpg",
-          "alt": "Ramo de 8 rosas con hojas temática Tinkerbell y corona de metal variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Canasta de Rosas Eternas y Chocolates",
-          "descripcion": "Una elegante canasta con rosas eternas y una selección de chocolates.",
-          "imagen": "assets/canastaRosasEternasYchocolates.jpg",
-          "alt": "Canasta con rosas eternas y chocolates"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Caja con Tulipanes",
-          "descripcion": "Una hermosa caja con tulipanes frescos, ideal para regalar en cualquier ocasión.",
-          "imagen": "assets/rECajacontulipanes.jpg",
-          "alt": "Caja con tulipanes"
-          ,
-          categoria: "rosas eternas,tulipanes"
-        },
-        {
-          "titulo": "Caja con Tulipanes - Variante 2",
-          "descripcion": "Una versión especial de la caja con tulipanes para un regalo aún más especial.",
-          "imagen": "assets/rECajacontulipanes2.jpg",
-          "alt": "Caja con tulipanes variante 2"
-          ,
-          categoria: "rosas eternas,tulipanes"
-        },
-        {
-          "titulo": "Canasta de Rosas Eternas y Chocolates - Variante 2",
-          "descripcion": "Una alternativa de la canasta con rosas eternas y chocolates, ideal para ocasiones especiales.",
-          "imagen": "assets/canastaRosasEternasYchocolates2.jpg",
-          "alt": "Canasta con rosas eternas y chocolates variante 2"
-          ,
-          categoria: "rosas eternas, chocolates"
-        },
-        {
-          "titulo": "Canasta de Rosas Eternas y Chocolates - Variante 3",
-          "descripcion": "Otra presentación especial de la canasta con rosas eternas y chocolates.",
-          "imagen": "assets/canastaRosasEternasYchocolates3.jpg",
-          "alt": "Canasta con rosas eternas y chocolates variante 3"
-          ,
-          categoria: "rosas eternas,chocolates"
-        },
-        {
-          "titulo": "Ramo de 20 Rosas Eternas y Chocolates",
-          "descripcion": "Un romántico ramo de 20 rosas acompañado de chocolates para un regalo especial.",
-          "imagen": "assets/rEramos20rosasYchocolates.jpg",
-          "alt": "Ramo de 20 rosas y chocolates"
-          ,
-          categoria: "rosas eternas, chocolates"
-        },
-        {
-          "titulo": "Ramo de 35 Rosas Eternas, Chocolates y Globos",
-          "descripcion": "Un espectacular ramo de 35 rosas con chocolates y globos, perfecto para celebraciones.",
-          "imagen": "assets/rEramos35rosasYchocolatesYGlobos.jpg",
-          "alt": "Ramo de 35 rosas con chocolates y globos"
-          ,
-          categoria: "rosas eternas,chocolates"
-        },
-        {
-          "titulo": "Ramo de 50 Rosas Eternas",
-          "descripcion": "Un lujoso ramo de 50 rosas, ideal para expresar los sentimientos más profundos.",
-          "imagen": "assets/rEramos50rosas.jpg",
-          "alt": "Ramo de 50 rosas",
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 50 Rosas Eternas - Variante 2",
-          "descripcion": "Una versión especial del lujoso ramo de 50 rosas.",
-          "imagen": "assets/rEramos50rosas2.jpg",
-          "alt": "Ramo de 50 rosas variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 80 Rosas Eternas",
-          "descripcion": "Un impresionante ramo de 80 rosas, ideal para grandes ocasiones.",
-          "imagen": "assets/rEramos80rosas.jpg",
-          "alt": "Ramo de 80 rosas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 80 Rosas Eternas - Variante 2",
-          "descripcion": "Otra hermosa versión del ramo de 80 rosas.",
-          "imagen": "assets/rEramos80rosas2.jpg",
-          "alt": "Ramo de 80 rosas variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Girasol Eterno Individual",
-          "descripcion": "Un hermoso girasol individual, perfecto para regalar un detalle especial.",
-          "imagen": "assets/rEgirasolesIndividuales.jpg",
-          "alt": "Girasol individual"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Girasol Eterno Individual - Variante 2",
-          "descripcion": "Otra versión del girasol individual.",
-          "imagen": "assets/rEgirasolesIndividuales2.jpg",
-          "alt": "Girasol individual variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Girasol Eterno Individual - Variante 3",
-          "descripcion": "Un girasol individual con una presentación especial.",
-          "imagen": "assets/rEgirasolesIndividuales3.jpg",
-          "alt": "Girasol individual variante 3"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Girasol Eterno Individual - Variante 4",
-          "descripcion": "Una cuarta presentación del girasol individual.",
-          "imagen": "assets/rEgirasolesIndividuales4.jpg",
-          "alt": "Girasol individual variante 4"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Girasol Eterno Individual - Variante 5",
-          "descripcion": "Un girasol individual con una envoltura especial.",
-          "imagen": "assets/rEgirasolesIndividuales5.jpg",
-          "alt": "Girasol individual variante 5"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo en Forma de Corazón y Chocolates",
-          "descripcion": "Un hermoso ramo en forma de corazón acompañado de chocolates.",
-          "imagen": "assets/rEramoenformadecorazonychocolates.jpg",
-          "alt": "Ramo en forma de corazón y chocolates"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas",
-          "descripcion": "Un clásico ramo de 10 rosas, ideal para cualquier ocasión.",
-          "imagen": "assets/rEramo10rosas.jpg",
-          "alt": "Ramo de 10 rosas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas - Variante 2",
-          "descripcion": "Otra versión elegante del ramo de 10 rosas.",
-          "imagen": "assets/rEramo10rosas2.jpg",
-          "alt": "Ramo de 10 rosas variante 2"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas - Variante 3",
-          "descripcion": "Una tercera presentación del ramo de 10 rosas.",
-          "imagen": "assets/rEramo10rosas3.jpg",
-          "alt": "Ramo de 10 rosas variante 3"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas - Variante 4",
-          "descripcion": "Un hermoso ramo de 10 rosas con una envoltura especial.",
-          "imagen": "assets/rEramo10rosas4.jpg",
-          "alt": "Ramo de 10 rosas variante 4"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas - Variante 5",
-          "descripcion": "Una quinta versión del ramo de 10 rosas.",
-          "imagen": "assets/rEramo10rosas5.jpg",
-          "alt": "Ramo de 10 rosas variante 5"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas - Variante 6",
-          "descripcion": "Una sexta presentación del ramo de 10 rosas.",
-          "imagen": "assets/rEramo10rosas6.jpg",
-          "alt": "Ramo de 10 rosas variante 6"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 10 Rosas Eternas - Variante 7",
-          "descripcion": "Una séptima versión del ramo de 10 rosas.",
-          "imagen": "assets/rEramo10rosas7.jpg",
-          "alt": "Ramo de 10 rosas variante 7"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 7 Rosas Eternas- Temática Frozen",
-          "descripcion": "Un encantador ramo de 7 rosas inspirado en Frozen.",
-          "imagen": "assets/rEramo7rosasTematicaFrozen.jpg",
-          "alt": "Ramo de 7 rosas temática Frozen"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 12 Tulipanes Eternos con Chocolates",
-          "descripcion": "Un elegante ramo de 12 tulipanes acompañado de deliciosos chocolates.",
-          "imagen": "assets/rEramo12tulipanesChocolates.jpg",
-          "alt": "Ramo de 12 tulipanes con chocolates"
-          ,
-          categoria: "rosas eternas,tulipanes"
-        },
-        {
-          "titulo": "Ramo de 6 Rosas Eternos",
-          "descripcion": "Un delicado ramo de 6 rosas, ideal para un detalle especial.",
-          "imagen": "assets/rEramo6rosas.jpg",
-          "alt": "Ramo de 6 rosas"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de Tulipanes Eternos",
-          "descripcion": "Un hermoso ramo de tulipanes frescos.",
-          "imagen": "assets/rEramoTulipanes.jpg",
-          "alt": "Ramo de tulipanes"
-          ,
-          categoria: "rosas eternas, tulipanes"
-        },
-        {
-          "titulo": "Ramo de Tulipanes Eternos - Variante 2",
-          "descripcion": "Otra presentación del elegante ramo de tulipanes.",
-          "imagen": "assets/rEramoTulipanes2.jpg",
-          "alt": "Ramo de tulipanes variante 2"
-          ,
-          categoria: "rosas eternas, tulipanes"
-        },
-        {
-          "titulo": "Ramo de Tulipanes Eternos - Variante 3",
-          "descripcion": "Una tercera versión del ramo de tulipanes.",
-          "imagen": "assets/rEramoTulipanes3.jpg",
-          "alt": "Ramo de tulipanes variante 3"
-          ,
-          categoria: "rosas eternas, tulipanes"
-        },
-        {
-          "titulo": "Ramo de Gomitas",
-          "descripcion": "Un divertido y colorido ramo hecho con gomitas.",
-          "imagen": "assets/ramodegomitas.jpg",
-          "alt": "Ramo de gomitas"
-          ,
-          categoria: "rosas eternas,gomitas"
-        },
-        {
-          "titulo": "Ramo de 12 Rosas Eternas Temáticas Cenicienta con Luces LED y Corona",
-          "descripcion": "Un mágico ramo de 12 rosas inspirado en Cenicienta, con luces LED y corona.",
-          "imagen": "assets/rEramo12rosastematicasCenicientaLucesledCorona.jpg",
-          "alt": "Ramo de 12 rosas temáticas Cenicienta con luces LED y corona"
-          ,
-          categoria: "rosas eternas"
-        },
-        {
-          "titulo": "Ramo de 12 Rosas Eternas Temáticas Princesas con Luces LED y Corona",
-          "descripcion": "Un hermoso ramo de 12 rosas inspirado en las princesas, con luces LED y corona.",
-          "imagen": "assets/rEramo12rosastematicasPrincesasLucesledCorona.jpg",
-          "alt": "Ramo de 12 rosas temáticas princesas con luces LED y corona"
-          ,
-          categoria: "rosas eternas"
+        </div>`;
+                catalogo.innerHTML += tarjeta;
+            });
         }
 
+        // Inicialización
+        renderProductos();
 
-      ];
+        // Buscar al escribir
+        buscador.addEventListener("input", () => {
+            const texto = buscador.value.trim().toLowerCase();
+            const categoriaActiva = document.querySelector(".btn-group .active").dataset.categoria;
+            renderProductos(texto, categoriaActiva);
+        });
 
-      // Contenedor donde se insertarán las tarjetas
-      const container = document.getElementById("ramos-container");
+        // Filtrar por categoría
+        botonesCategoria.forEach(boton => {
+            boton.addEventListener("click", () => {
+                botonesCategoria.forEach(b => b.classList.remove("active"));
+                boton.classList.add("active");
 
-      // Generar dinámicamente las tarjetas
-      function renderRamos(ramos) {
-        container.innerHTML = ramos.map(ramo => `
-    <div class="col-md-4 col-12 mb-4">
-      <div class="card shadow-sm">
-        <img src="${ramo.imagen}" class="card-img-top img-hover" alt="${ramo.alt}">
-        <div class="card-body text-center">
-          <h5 class="card-title">${ramo.titulo}</h5>
-          <p class="card-text">${ramo.descripcion}</p>
-          <a href="contacto.html" class="btn btn-success">Ver más</a>
-        </div>
-      </div>
-    </div>
-  `).join(""); // Une las tarjetas en un solo string para mejorar el rendimiento
-      }
-
-      // Renderizar las tarjetas al cargar la página
-      renderRamos(ramos);
-
+                const texto = buscador.value.trim().toLowerCase();
+                const categoria = boton.dataset.categoria;
+                renderProductos(texto, categoria);
+            });
+        });
     </script>
 
 
-    <section id="about" class="text-center container py-5">
-      <h2 class="section-title">🌷 Nuestra Historia</h2>
-      <p class="section-text">
-        Jacky es una chica apasionada en lo que hace. Fue capaz de emprender con valentía su propio negocio, inspirado
-        en su
-        amor por la naturaleza y las flores. Desde pequeña, quedó maravillada por la belleza de los jardines de su
-        abuela,
-        donde cada flor parecía contar una historia.
-      </p>
-      <p class="section-text">
-        Con esfuerzo y dedicación, transformó su pasión en una marca reconocida por la calidad y el detalle en cada
-        ramo.
-        Cada arreglo floral que crea es más que un simple conjunto de flores: es una obra de arte llena de emociones,
-        diseñada para transmitir amor, alegría y gratitud.
-      </p>
-      <p class="section-text">
-        Hoy, su negocio florece con el mismo espíritu con el que comenzó: con amor, creatividad y el deseo de hacer del
-        mundo un lugar más bello, una flor a la vez. 💐✨
-      </p>
-    </section>
 
-    <section id="services" class="container py-5">
-      <h2 class="text-center section-title">💐 Servicios</h2>
-      <p class="text-center section-text">Ramos personalizados.</p>
+    <div id="footer-container"></div>
 
-      <div class="row align-items-center">
-        <!-- Imagen del ramo -->
-        <div class="col-md-6 text-center">
-          <img
-            src="https://images.unsplash.com/photo-1503652601-557d07733ddc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFtb3MlMjBkZSUyMHJvc2FzfGVufDB8fDB8fHww"
-            alt="Ramo de Girasoles" class="img-fluid rounded shadow">
-        </div>
-
-        <!-- Historia y sensación de regalar -->
-        <div class="col-md-6">
-          <h3 class="fw-bold">🌻 El poder de un ramo</h3>
-          <p class="section-text">
-            Imagina la emoción de alguien al recibir un ramo de flores inesperado. Es más que un simple regalo,
-            es una caricia para el alma, un gesto que habla sin palabras.
-          </p>
-          <p class="section-text">
-            Un ramo de girasoles puede iluminar el día de alguien, transmitir esperanza y llenar un espacio de alegría.
-            Regalar flores es regalar emociones, es transformar un momento cotidiano en un instante inolvidable.
-          </p>
-          <a href="#" class="btn btn-success">Descubre más</a>
-        </div>
-      </div>
-    </section>
-    <!- -<section id="events" class="container py-5">
-      <h2 class="text-center section-title">🎉 Eventos Especiales</h2>
-      <p class="text-center section-text">Creamos momentos inolvidables con arreglos florales únicos para cada ocasión.
-      </p>
-
-      <div class="row align-items-center flex-md-row-reverse">
-        <!-- Imagen del evento -->
-        <!-- <div class="col-md-6 text-center">
-            <img
-              src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJvZGFzfGVufDB8fDB8fHww"
-              alt="Decoración floral para eventos" class="img-fluid rounded shadow">
-          </div> -->
-
-        <!-- Descripción del servicio de eventos -->
-        <!-- <div class="col-md-6">
-            <h3 class="fw-bold">🌺 Magia en cada celebración</h3>
-            <p class="section-text">
-              Cada evento tiene su esencia, su historia y su emoción. Desde bodas elegantes hasta aniversarios íntimos,
-              nuestros arreglos florales transforman cada espacio en un escenario de ensueño.
-            </p>
-            <p class="section-text">
-              Imagina caminar hacia el altar rodeado de pétalos de rosas, o una cena romántica iluminada por el aroma de
-              flores frescas.
-              Nos encargamos de cada detalle para que cada evento sea un recuerdo imborrable.
-            </p>
-            <a href="#" class="btn btn-success">Ver opciones</a>
-          </div> -->
-        <!-- </div>
-      </section>--!>
-
-      <!-- Mini Banner de Reproducción -->
-        <section class="video-banner">
-          <div class="container-fluid p-0">
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/CzX8TEfnndo?autoplay=1&mute=0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
-            </div>
-          </div>
-        </section>
-
-
-        <!-- Footer Botánico -->
-
-        <footer class="bg-light text-center p-3">
-          <p>🌸 © 2025 Jacky Flores y Detalles | Amor y Naturaleza en Cada Ramo 🌿</p>
-          <span>by hemisterhe Todos Los Derechos Reservados</span>
-
-        </footer>
-
-
-
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
