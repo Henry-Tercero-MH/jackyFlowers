@@ -107,7 +107,11 @@ export default async function DetalleProductoPage({ params }: Props) {
             </h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {relacionados.map((p) => (
-                <ProductCard key={p.id} producto={p} />
+                <ProductCard 
+                  key={p.id} 
+                  producto={p} 
+                  whatsapp={config?.whatsapp || '+50249200595'}
+                />
               ))}
             </div>
           </div>
