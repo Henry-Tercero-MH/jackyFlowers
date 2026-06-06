@@ -3,25 +3,44 @@
    ========================== */
 
 :root {
-  --color-principal: #f234a9; /* tu rosado neón */
-  --color-rosado-pastel: #f9c5d1;
-  /* --color-rosado-coral: #f88379; */
-  --color-rosado-medio: #ec407a;
-  --color-rosado-viejo: #d4879c;
-  --color-melocoton-claro: #ffc1cc;
+  /* ── Paleta Rose Garden (tonos cálidos, sin morado) ── */
+  --color-principal:      #D94476;   /* Rosa cálido    — navbar, CTAs          */
+  --color-rosado-pastel:  #FADADD;   /* Blush muy suave — fondos / hover       */
+  --color-rosado-coral:   #E8634E;   /* Coral terroso  — hover activo          */
+  --color-rosado-medio:   #B83260;   /* Rosa medio     — pressed / títulos     */
+  --color-rosado-viejo:   #C05070;   /* Rosa terroso   — subtítulos            */
+  --color-melocoton-claro:#FFE0EA;   /* Durazno blush  — highlights / badges   */
+
+  /* Roles semánticos */
+  --color-texto:       #ffffff;
+  --color-hover:       #fff0f4;
+  --color-texto-hover: var(--color-rosado-medio);
+  --color-footer:      #1a1a1a;
+  --color-footer-text: #ffffff;
+  --color-box-shadow:  rgba(180, 40, 80, 0.15);
+
+  /* Gradientes de marca — contraste sutil para evitar sensación de "secciones" */
+  --grad-principal: linear-gradient(to right, #D94678 0%, #C8376A 100%);
+  --grad-boton:     linear-gradient(to right, #D94476 0%, #B83260 100%);
+
+  /* Sombra con tinte rosa cálido */
+  --sombra-principal: 0 2px 18px rgba(217, 68, 118, 0.30),
+                      0 1px  5px rgba(217, 68, 118, 0.15);
 
   /* Tipografía */
   --fuente-principal: "Montserrat", sans-serif;
 
-  /* Tamaños */
-  --navbar-height: 17vh;
-  --navbar-brand-width: 100px;
+  /* Tamaños */
+  --navbar-height:       17vh;
+  --navbar-brand-width:  100px;
   --navbar-brand-height: 75px;
-  --titulo-principal: 3rem;
-  --parrafo: 1.25rem;
+  --titulo-principal:    3rem;
+  --parrafo:             1.25rem;
+}
 
-  /* Sombra */
-  --sombra-principal: 0 0 25px white, 0 0 8px rgba(248, 247, 243, 0.996);
+/* Compensa el fixed navbar al navegar por anclas */
+[id] {
+  scroll-margin-top: calc(var(--navbar-height) + 1rem);
 }
 
 /* ==========================
@@ -51,7 +70,7 @@
    ========================== */
 .navbar {
   height: var(--navbar-height);
-  background-color: var(--color-principal);
+  background: var(--grad-principal);
   color: var(--color-texto);
   font-size: 1.5rem;
   font-family: var(--fuente-principal);
@@ -93,8 +112,7 @@
   font-size: var(--titulo-principal);
   font-weight: bold;
   transition: color 0.3s ease;
-  color: black;
-  /* border-bottom: 2px solid black; */
+  color: var(--color-rosado-viejo);
 }
 
 .tituloPrincipal:hover {
@@ -124,9 +142,7 @@
 
 .card-body:hover,
 .card-body p:hover {
-  /* background-color: #098598; */
   color: #111010;
-  border-radius: 20%;
 }
 
 /* ==========================
@@ -283,33 +299,65 @@ footer {
    📌 Menú
    ========================== */
 .cajaMenu {
-  margin-top: 10px;
-  background-color: var(--color-principal);
+  background: transparent;
   width: 100%;
 }
 
 .cajaMenu ul {
-  padding: 20px;
+  padding: 0;
 }
-button {
+
+/* En móvil el menú se despliega hacia abajo — necesita fondo propio */
+@media (max-width: 991px) {
+  .cajaMenu.show {
+    background: var(--grad-principal);
+    padding: 0.75rem 1rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+    margin-top: 8px;
+  }
+}
+
+/* Botones de filtro del catálogo */
+.btn-group .btn-outline-secondary.active,
+.btn-group .btn-outline-secondary:active {
   background-color: var(--color-principal);
+  border-color: var(--color-principal);
   color: white;
 }
 
-button:hover {
-  background-color: var(--color-rosado-coral);
+.btn-group .btn-outline-secondary:hover {
+  background-color: var(--color-rosado-pastel);
+  border-color: var(--color-rosado-pastel);
+  color: #333;
 }
 
 .caja-Historia {
-  /* background-color: var(--color-rosado-pastel); */
-  color: var(--color-texto);
+  color: #2d1a23;
 }
 
-.tituloPrincipal {
-  color: var(--color-rosado-viejo);
+/* Botón de cotización en cards del catálogo */
+.btn-cotizar {
+  background: var(--grad-boton);
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 3px 10px rgba(160, 36, 78, 0.35);
+  transition: opacity 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 }
+
+.btn-cotizar:hover,
+.btn-cotizar:focus {
+  color: white;
+  opacity: 0.88;
+  box-shadow: 0 5px 16px rgba(160, 36, 78, 0.45);
+  transform: translateY(-1px);
+}
+
 .img-producto {
   max-width: 100%;
-  height: 400px; /* o el tamaño que quieras */
-  object-fit: cover; /* recorta manteniendo proporción */
+  height: 400px;
+  object-fit: cover;
 }
