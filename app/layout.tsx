@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Dancing_Script, Nunito, Lato } from 'next/font/google'
 import { Toaster } from 'sonner'
 import './globals.css'
@@ -35,11 +35,18 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: 'Jacky Flores y Detalles',
   description: 'Arreglos florales artesanales hechos con amor',
-  viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+  maximumScale: 1.0,
+  userScalable: false,
+  viewportFit: 'cover',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
