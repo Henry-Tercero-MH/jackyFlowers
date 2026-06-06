@@ -35,6 +35,11 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: 'Jacky Flores y Detalles',
   description: 'Arreglos florales artesanales hechos con amor',
+  viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
