@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/dialog'
 
 interface LogItem {
-  tipo: 'progreso' | 'ok' | 'error' | 'aviso' | 'completo'
+  tipo: 'progreso' | 'ok' | 'error' | 'aviso' | 'completo' | 'log'
   indice?: number
   total?: number
   nombre?: string
